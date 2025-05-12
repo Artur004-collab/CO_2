@@ -108,13 +108,13 @@ export default function CryptoProcessingPage() {
           <>
             {/* Подложка */}
             <div
-              className="fixed inset-0 bg-black z-40"
+              className="fixed inset-0 bg-gray-900 z-40"
               onClick={() => setMenuOpen(false)}
             ></div>
 
             {/* Меню */}
             <nav
-              className={`fixed top-0 right-0 h-full w-64 bg-black z-50 transform ${
+              className={`fixed top-0 right-0 h-full w-64 bg-gray-900 z-50 transform ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
               } transition-transform duration-300`}
             >
