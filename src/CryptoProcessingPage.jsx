@@ -98,16 +98,32 @@ export default function CryptoProcessingPage() {
             } transition-transform duration-300 lg:static lg:transform-none lg:flex lg:flex-row lg:gap-8 lg:w-auto lg:bg-transparent`}
           >
             <div className="flex flex-col gap-6 p-6 lg:p-0 lg:flex-row lg:items-center">
-              <a href="#" className="hover:text-white transition duration-300">
+              <a
+                href="#"
+                className="hover:text-white transition duration-300"
+                onClick={() => setMenuOpen(false)}
+              >
                 {language === "ru" ? "Трафик и Продажи" : "Traffic and Sales"}
               </a>
-              <a href="#" className="hover:text-white transition duration-300">
+              <a
+                href="#"
+                className="hover:text-white transition duration-300"
+                onClick={() => setMenuOpen(false)}
+              >
                 {language === "ru" ? "Криптокомпании" : "Crypto Companies"}
               </a>
-              <a href="#" className="hover:text-white transition duration-300">
+              <a
+                href="#"
+                className="hover:text-white transition duration-300"
+                onClick={() => setMenuOpen(false)}
+              >
                 {language === "ru" ? "Ликвидность" : "Liquidity"}
               </a>
-              <a href="#" className="hover:text-white transition duration-300">
+              <a
+                href="#"
+                className="hover:text-white transition duration-300"
+                onClick={() => setMenuOpen(false)}
+              >
                 {language === "ru" ? "Как стать партнёром" : "Become a Partner"}
               </a>
             </div>
