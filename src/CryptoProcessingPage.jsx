@@ -86,19 +86,19 @@ export default function CryptoProcessingPage() {
           {/* Десктопное меню */}
           <nav className="hidden lg:flex gap-8 text-sm text-gray-400 items-center">
             <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Трафик и Продажи" : "Traffic and Sales"}
+              Трафик и Продажи
             </a>
             <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Криптокомпании" : "Crypto Companies"}
+              Криптокомпании
             </a>
             <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Ликвидность" : "Liquidity"}
+              Ликвидность
             </a>
             <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Как стать партнёром" : "Become a Partner"}
+              Как стать партнёром
             </a>
             <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300">
-              {language === "ru" ? "Покупаем трафик" : "Buy Traffic"}
+              Get Started
             </button>
           </nav>
         </div>
@@ -108,15 +108,15 @@ export default function CryptoProcessingPage() {
           <>
             {/* Подложка */}
             <div
-              className="fixed inset-0 bg-[#0d0d0d] z-40"
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
               onClick={() => setMenuOpen(false)}
             ></div>
 
             {/* Меню */}
             <nav
-              className={`fixed top-0 right-0 h-full w-64 bg-[#0d0d0d] z-50 transform ${
+              className={`fixed top-0 right-0 h-full w-64 bg-[#16232b] z-50 transform ${
                 menuOpen ? "translate-x-0" : "translate-x-full"
-              } transition-transform duration-300`}
+              } transition-all duration-300 rounded-l-2xl shadow-lg`}
             >
               <div className="flex flex-col gap-6 p-6">
                 {/* Кнопка закрытия меню */}
@@ -130,56 +130,43 @@ export default function CryptoProcessingPage() {
                 {/* Пункты меню */}
                 <a
                   href="#"
-                  className="hover:text-white transition duration-300"
-                  onClick={() => setMenuOpen(false)}
+                  className="hover:text-[#f8b739] font-semibold transition duration-300"
                 >
-                  {language === "ru" ? "Трафик и Продажи" : "Traffic and Sales"}
+                  Трафик и Продажи
                 </a>
                 <a
                   href="#"
-                  className="hover:text-white transition duration-300"
-                  onClick={() => setMenuOpen(false)}
+                  className="hover:text-[#f8b739] font-semibold transition duration-300"
                 >
-                  {language === "ru" ? "Криптокомпании" : "Crypto Companies"}
+                  Криптокомпании
                 </a>
                 <a
                   href="#"
-                  className="hover:text-white transition duration-300"
-                  onClick={() => setMenuOpen(false)}
+                  className="hover:text-[#f8b739] font-semibold transition duration-300"
                 >
-                  {language === "ru" ? "Ликвидность" : "Liquidity"}
+                  Ликвидность
                 </a>
                 <a
                   href="#"
-                  className="hover:text-white transition duration-300"
-                  onClick={() => setMenuOpen(false)}
+                  className="hover:text-[#f8b739] font-semibold transition duration-300"
                 >
-                  {language === "ru" ? "Как стать партнёром" : "Become a Partner"}
+                  Как стать партнёром
                 </a>
 
-                {/* Языки */}
-                <div className="flex flex-col gap-2 mt-4">
+                {/* Смена языка */}
+                <div className="flex items-center gap-2 mt-4">
+                  <span className="text-gray-400">🌐</span>
                   <button
-                    className={`hover:text-gray-300 transition cursor-pointer ${
-                      language === "ru" ? "text-white font-semibold" : "text-gray-400"
-                    }`}
-                    onClick={() => setLanguage("ru")}
+                    className="hover:text-[#f8b739] font-semibold transition duration-300"
+                    onClick={() => toggleLanguage()}
                   >
-                    Русский
-                  </button>
-                  <button
-                    className={`hover:text-gray-300 transition cursor-pointer ${
-                      language === "en" ? "text-white font-semibold" : "text-gray-400"
-                    }`}
-                    onClick={() => setLanguage("en")}
-                  >
-                    English
+                    {language === "ru" ? "Русский" : "English"}
                   </button>
                 </div>
 
-                {/* Кнопка "Покупаем трафик" */}
-                <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300 mt-4">
-                  {language === "ru" ? "Покупаем трафик" : "Buy Traffic"}
+                {/* Кнопка "Get Started" */}
+                <button className="bg-[#f8b739] text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300 mt-auto">
+                  Get Started
                 </button>
               </div>
             </nav>
