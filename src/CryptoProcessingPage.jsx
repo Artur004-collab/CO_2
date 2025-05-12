@@ -83,28 +83,38 @@ export default function CryptoProcessingPage() {
             ☰
           </button>
 
+          {/* Подложка для меню */}
+          {menuOpen && (
+            <div
+              className="fixed inset-0 bg-black/80 z-40"
+              onClick={() => setMenuOpen(false)}
+            ></div>
+          )}
+
           {/* Основное меню */}
           <nav
-            className={`${
-              menuOpen ? "block" : "hidden"
-            } lg:flex flex-col lg:flex-row gap-8 text-sm text-gray-400 absolute lg:static top-16 left-0 w-full lg:w-auto bg-black lg:bg-transparent p-4 lg:p-0`}
+            className={`fixed top-0 right-0 h-full w-64 bg-black z-50 transform ${
+              menuOpen ? "translate-x-0" : "translate-x-full"
+            } transition-transform duration-300 lg:static lg:transform-none lg:flex lg:flex-row lg:gap-8 lg:w-auto lg:bg-transparent`}
           >
-            <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Трафик и Продажи" : "Traffic and Sales"}
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Криптокомпании" : "Crypto Companies"}
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Ликвидность" : "Liquidity"}
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              {language === "ru" ? "Как стать партнёром" : "Become a Partner"}
-            </a>
+            <div className="flex flex-col gap-6 p-6 lg:p-0 lg:flex-row lg:items-center">
+              <a href="#" className="hover:text-white transition duration-300">
+                {language === "ru" ? "Трафик и Продажи" : "Traffic and Sales"}
+              </a>
+              <a href="#" className="hover:text-white transition duration-300">
+                {language === "ru" ? "Криптокомпании" : "Crypto Companies"}
+              </a>
+              <a href="#" className="hover:text-white transition duration-300">
+                {language === "ru" ? "Ликвидность" : "Liquidity"}
+              </a>
+              <a href="#" className="hover:text-white transition duration-300">
+                {language === "ru" ? "Как стать партнёром" : "Become a Partner"}
+              </a>
+            </div>
           </nav>
 
           {/* Кнопка выбора языка и кнопка "Покупаем трафик" */}
-          <div className="flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <div className="relative group">
               <button className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition duration-300 cursor-pointer">
                 <Globe size={18} /> {language === "ru" ? "Русский" : "English"}
