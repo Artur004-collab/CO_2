@@ -77,7 +77,7 @@ export default function CryptoProcessingPage() {
 
           {/* Бургер-меню для мобильных устройств */}
           <button
-            className="lg:hidden text-gray-400 hover:text-white transition duration-300"
+            className="lg:hidden text-gray-400 hover:text-white transition duration-300 text-2xl"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             ☰
@@ -86,7 +86,7 @@ export default function CryptoProcessingPage() {
           {/* Подложка для меню */}
           {menuOpen && (
             <div
-              className="fixed inset-0 bg-black/80 z-40"
+              className="fixed inset-0 bg-black/80 z-40 transition-opacity duration-300"
               onClick={() => setMenuOpen(false)}
             ></div>
           )}
@@ -98,6 +98,15 @@ export default function CryptoProcessingPage() {
             } transition-transform duration-300 lg:static lg:transform-none lg:flex lg:flex-row lg:gap-8 lg:w-auto lg:bg-transparent`}
           >
             <div className="flex flex-col gap-6 p-6 lg:p-0 lg:flex-row lg:items-center">
+              {/* Кнопка закрытия меню */}
+              <button
+                className="self-end text-gray-400 hover:text-white text-2xl"
+                onClick={() => setMenuOpen(false)}
+              >
+                ✖
+              </button>
+
+              {/* Пункты меню */}
               <a
                 href="#"
                 className="hover:text-white transition duration-300"
@@ -126,42 +135,33 @@ export default function CryptoProcessingPage() {
               >
                 {language === "ru" ? "Как стать партнёром" : "Become a Partner"}
               </a>
+
+              {/* Языки */}
+              <div className="flex flex-col gap-2 mt-4">
+                <button
+                  className={`hover:text-gray-300 transition cursor-pointer ${
+                    language === "ru" ? "text-white font-semibold" : "text-gray-400"
+                  }`}
+                  onClick={() => setLanguage("ru")}
+                >
+                  Русский
+                </button>
+                <button
+                  className={`hover:text-gray-300 transition cursor-pointer ${
+                    language === "en" ? "text-white font-semibold" : "text-gray-400"
+                  }`}
+                  onClick={() => setLanguage("en")}
+                >
+                  English
+                </button>
+              </div>
+
+              {/* Кнопка "Покупаем трафик" */}
+              <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300 mt-4">
+                {language === "ru" ? "Покупаем трафик" : "Buy Traffic"}
+              </button>
             </div>
           </nav>
-
-          {/* Кнопка выбора языка и кнопка "Покупаем трафик" */}
-          <div className="hidden lg:flex items-center gap-4">
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition duration-300 cursor-pointer">
-                <Globe size={18} /> {language === "ru" ? "Русский" : "English"}
-              </button>
-              <div className="absolute right-0 mt-2 bg-black/80 border border-gray-700 rounded-xl shadow-lg p-4 w-32 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <ul className="space-y-2">
-                  <li
-                    className={`hover:text-gray-300 transition cursor-pointer ${
-                      language === "ru" ? "text-white font-semibold" : "text-gray-400"
-                    }`}
-                    onClick={() => setLanguage("ru")}
-                  >
-                    Русский
-                  </li>
-                  <li
-                    className={`hover:text-gray-300 transition cursor-pointer ${
-                      language === "en" ? "text-white font-semibold" : "text-gray-400"
-                    }`}
-                    onClick={() => setLanguage("en")}
-                  >
-                    English
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Кнопка "Покупаем трафик" */}
-            <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300">
-              {language === "ru" ? "Покупаем трафик" : "Buy Traffic"}
-            </button>
-          </div>
         </div>
       </header>
 
