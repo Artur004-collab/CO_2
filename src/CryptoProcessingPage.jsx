@@ -6,6 +6,7 @@ export default function CryptoProcessingPage() {
   const [language, setLanguage] = useState("ru");
   const [chatOpen, setChatOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1800);
@@ -67,15 +68,67 @@ export default function CryptoProcessingPage() {
 
   return (
     <div className="min-h-screen w-screen bg-black text-white flex flex-col relative overflow-x-hidden">
-      <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md px-6 py-4 flex justify-between items-center border-b border-gray-800">
-        <div className="text-xl font-bold hover:scale-105 transition-transform duration-300">Cryptoopen</div>
-        <div className="flex items-center gap-4">
-          <button onClick={toggleLanguage} className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition duration-300">
-            <Globe size={18} /> {language === "ru" ? "Русский" : "English"}
+      <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md py-4 border-b border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+          {/* Логотип */}
+          <div className="text-xl font-bold hover:scale-105 transition-transform duration-300">
+            Cryptoopen
+          </div>
+
+          {/* Бургер-меню для мобильных устройств */}
+          <button
+            className="lg:hidden text-gray-400 hover:text-white transition duration-300"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
           </button>
-          <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300">
-            Покупаем трафик
-          </button>
+
+          {/* Основное меню */}
+          <nav
+            className={`${
+              menuOpen ? "block" : "hidden"
+            } lg:flex flex-col lg:flex-row gap-8 text-sm text-gray-400 absolute lg:static top-16 left-0 w-full lg:w-auto bg-black lg:bg-transparent p-4 lg:p-0`}
+          >
+            <a href="#" className="hover:text-white transition duration-300">
+              {language === "ru" ? "Трафик и Продажи" : "Traffic and Sales"}
+            </a>
+            <a href="#" className="hover:text-white transition duration-300">
+              {language === "ru" ? "Криптокомпании" : "Crypto Companies"}
+            </a>
+            <a href="#" className="hover:text-white transition duration-300">
+              {language === "ru" ? "Ликвидность" : "Liquidity"}
+            </a>
+            <a href="#" className="hover:text-white transition duration-300">
+              {language === "ru" ? "Как стать партнёром" : "Become a Partner"}
+            </a>
+          </nav>
+
+          {/* Кнопка выбора языка */}
+          <div className="relative group">
+            <button className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition duration-300 cursor-pointer">
+              <Globe size={18} /> {language === "ru" ? "Русский" : "English"}
+            </button>
+            <div className="absolute right-0 mt-2 bg-black/80 border border-gray-700 rounded-xl shadow-lg p-4 w-32 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <ul className="space-y-2">
+                <li
+                  className={`hover:text-gray-300 transition cursor-pointer ${
+                    language === "ru" ? "text-white font-semibold" : "text-gray-400"
+                  }`}
+                  onClick={() => setLanguage("ru")}
+                >
+                  Русский
+                </li>
+                <li
+                  className={`hover:text-gray-300 transition cursor-pointer ${
+                    language === "en" ? "text-white font-semibold" : "text-gray-400"
+                  }`}
+                  onClick={() => setLanguage("en")}
+                >
+                  English
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
 
