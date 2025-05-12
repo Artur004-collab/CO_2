@@ -2,7 +2,7 @@
   "runOnStart": true,
   "updateInterval": 60,
   "logging": true,
-  "silent": true,
+  "silent": false,
   "commitMessage": "--- Auto Git Commit ---",
   "locale": "en-US",
   "timeZone": "Europe/Berlin"
