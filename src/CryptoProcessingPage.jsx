@@ -84,7 +84,7 @@ export default function CryptoProcessingPage() {
           </button>
 
           {/* Десктопное меню */}
-          <nav className="hidden lg:flex gap-8 text-sm text-gray-400">
+          <nav className="hidden lg:flex gap-8 text-sm text-gray-400 items-center">
             <a href="#" className="hover:text-white transition duration-300">
               {language === "ru" ? "Трафик и Продажи" : "Traffic and Sales"}
             </a>
@@ -108,7 +108,7 @@ export default function CryptoProcessingPage() {
           <>
             {/* Подложка */}
             <div
-              className="fixed inset-0 bg-black/80 z-40 transition-opacity duration-300"
+              className="fixed inset-0 bg-black z-40 transition-opacity duration-300"
               onClick={() => setMenuOpen(false)}
             ></div>
 
