@@ -103,31 +103,38 @@ export default function CryptoProcessingPage() {
             </a>
           </nav>
 
-          {/* Кнопка выбора языка */}
-          <div className="relative group">
-            <button className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition duration-300 cursor-pointer">
-              <Globe size={18} /> {language === "ru" ? "Русский" : "English"}
-            </button>
-            <div className="absolute right-0 mt-2 bg-black/80 border border-gray-700 rounded-xl shadow-lg p-4 w-32 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              <ul className="space-y-2">
-                <li
-                  className={`hover:text-gray-300 transition cursor-pointer ${
-                    language === "ru" ? "text-white font-semibold" : "text-gray-400"
-                  }`}
-                  onClick={() => setLanguage("ru")}
-                >
-                  Русский
-                </li>
-                <li
-                  className={`hover:text-gray-300 transition cursor-pointer ${
-                    language === "en" ? "text-white font-semibold" : "text-gray-400"
-                  }`}
-                  onClick={() => setLanguage("en")}
-                >
-                  English
-                </li>
-              </ul>
+          {/* Кнопка выбора языка и кнопка "Покупаем трафик" */}
+          <div className="flex items-center gap-4">
+            <div className="relative group">
+              <button className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition duration-300 cursor-pointer">
+                <Globe size={18} /> {language === "ru" ? "Русский" : "English"}
+              </button>
+              <div className="absolute right-0 mt-2 bg-black/80 border border-gray-700 rounded-xl shadow-lg p-4 w-32 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                <ul className="space-y-2">
+                  <li
+                    className={`hover:text-gray-300 transition cursor-pointer ${
+                      language === "ru" ? "text-white font-semibold" : "text-gray-400"
+                    }`}
+                    onClick={() => setLanguage("ru")}
+                  >
+                    Русский
+                  </li>
+                  <li
+                    className={`hover:text-gray-300 transition cursor-pointer ${
+                      language === "en" ? "text-white font-semibold" : "text-gray-400"
+                    }`}
+                    onClick={() => setLanguage("en")}
+                  >
+                    English
+                  </li>
+                </ul>
+              </div>
             </div>
+
+            {/* Кнопка "Покупаем трафик" */}
+            <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300">
+              {language === "ru" ? "Покупаем трафик" : "Buy Traffic"}
+            </button>
           </div>
         </div>
       </header>
