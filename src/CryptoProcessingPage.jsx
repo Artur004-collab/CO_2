@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, MessageCircle, Globe, Settings, Repeat, Shield, MoveRight, Send } from "lucide-react";
+import MobileMenu from "./MobileMenu";
 
 export default function CryptoProcessingPage() {
   const [tab, setTab] = useState("accept");
   const [language, setLanguage] = useState("ru");
   const [chatOpen, setChatOpen] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1800);
@@ -16,10 +16,6 @@ export default function CryptoProcessingPage() {
   const scrollToServices = () => {
     const section = document.getElementById("services");
     section?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const toggleLanguage = () => {
-    setLanguage(prev => (prev === "ru" ? "en" : "ru"));
   };
 
   const handleTabChange = (newTab) => {
@@ -68,111 +64,7 @@ export default function CryptoProcessingPage() {
 
   return (
     <div className="min-h-screen w-screen bg-black text-white flex flex-col relative overflow-x-hidden">
-      <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md py-4 border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          {/* Логотип */}
-          <div className="text-xl font-bold hover:scale-105 transition-transform duration-300">
-            Cryptoopen
-          </div>
-
-          {/* Бургер-меню для мобильных устройств */}
-          <button
-            className="lg:hidden text-gray-400 hover:text-white transition duration-300 text-3xl"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            ☰
-          </button>
-
-          {/* Десктопное меню */}
-          <nav className="hidden lg:flex gap-8 text-sm text-gray-400 items-center">
-            <a href="#" className="hover:text-white transition duration-300">
-              Трафик и Продажи
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              Криптокомпании
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              Ликвидность
-            </a>
-            <a href="#" className="hover:text-white transition duration-300">
-              Как стать партнёром
-            </a>
-            <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300">
-              Get Started
-            </button>
-          </nav>
-        </div>
-
-        {/* Мобильное меню */}
-        {menuOpen && (
-          <>
-            {/* Подложка */}
-            <div
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
-              onClick={() => setMenuOpen(false)}
-            ></div>
-
-            {/* Меню */}
-            <nav
-              className={`fixed top-0 right-0 h-full w-64 bg-[#16232b] z-50 transform ${
-                menuOpen ? "translate-x-0" : "translate-x-full"
-              } transition-all duration-300 rounded-l-2xl shadow-lg`}
-            >
-              <div className="flex flex-col gap-6 p-6">
-                {/* Кнопка закрытия меню */}
-                <button
-                  className="self-end text-gray-400 hover:text-white text-3xl"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  ✖
-                </button>
-
-                {/* Пункты меню */}
-                <a
-                  href="#"
-                  className="hover:text-[#f8b739] font-semibold transition duration-300"
-                >
-                  Трафик и Продажи
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-[#f8b739] font-semibold transition duration-300"
-                >
-                  Криптокомпании
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-[#f8b739] font-semibold transition duration-300"
-                >
-                  Ликвидность
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-[#f8b739] font-semibold transition duration-300"
-                >
-                  Как стать партнёром
-                </a>
-
-                {/* Смена языка */}
-                <div className="flex items-center gap-2 mt-4">
-                  <span className="text-gray-400">🌐</span>
-                  <button
-                    className="hover:text-[#f8b739] font-semibold transition duration-300"
-                    onClick={() => toggleLanguage()}
-                  >
-                    {language === "ru" ? "Русский" : "English"}
-                  </button>
-                </div>
-
-                {/* Кнопка "Get Started" */}
-                <button className="bg-[#f8b739] text-black px-4 py-2 rounded-xl shadow hover:scale-110 transition-transform duration-300 mt-auto">
-                  Get Started
-                </button>
-              </div>
-            </nav>
-          </>
-        )}
-      </header>
+      <MobileMenu />
 
       <section className="h-screen flex flex-col items-center justify-center px-6">
         <div className="text-center max-w-3xl">
