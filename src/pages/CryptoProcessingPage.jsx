@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import Navbar from "../components/Navbar";
-import Swiper, { Navigation } from "swiper";
-import { Autoplay } from "swiper/modules";
+import Swiper from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
@@ -19,8 +18,8 @@ export default function CryptoProcessingPage() {
   }, []);
 
   useEffect(() => {
-    Swiper.use([Navigation, Autoplay]);
     new Swiper(".swiper", {
+      modules: [Swiper.Navigation, Swiper.Autoplay],
       loop: true,
       autoplay: {
         delay: 6000,
