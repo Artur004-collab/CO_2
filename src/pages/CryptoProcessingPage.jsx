@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import Navbar from "../components/Navbar";
-import Swiper, { Navigation, Autoplay } from "swiper";
+import Swiper, { Navigation } from "swiper";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
