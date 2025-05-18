@@ -17,8 +17,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md py-4 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Логотип */}
-        <div className="text-xl font-bold text-white hover:scale-105 transition-transform duration-300">
-          Cryptoopen
+        <div className="text-3xl font-bold text-white hover:scale-105 transition-transform duration-300">
+          Crypto Open
         </div>
 
         {/* Десктопное меню */}
