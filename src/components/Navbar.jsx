@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { Globe, Menu, X } from "lucide-react";
 
-export default function navbar() {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [language, setLanguage] = useState("ru");
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "ru" ? "en" : "ru"));
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -46,7 +50,7 @@ export default function navbar() {
           </div>
         </nav>
 
-        {/* Мобильное меню */}
+        {/* Кнопка открытия мобильного меню */}
         <button
           className="md:hidden text-gray-400 hover:text-white transition duration-300 text-3xl"
           onClick={() => setMenuOpen(true)}
@@ -55,64 +59,71 @@ export default function navbar() {
         </button>
       </div>
 
-      {/* Overlay меню для мобильных */}
+      {/* Мобильное меню */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-[#0d0d0d] z-50 flex flex-col items-center text-white">
-          {/* Кнопка закрытия */}
-          <button
-            className="absolute top-6 right-6 text-gray-400 hover:text-white text-3xl"
-            onClick={() => setMenuOpen(false)}
-          >
-            <X />
-          </button>
+        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex flex-col">
+          {/* Оверлей */}
+          <div
+            className="absolute inset-0"
+            onClick={closeMenu}
+          ></div>
 
-          {/* Ссылки меню */}
-          <nav className="flex flex-col gap-6 text-lg text-center mt-20">
-            <a
-              href="#"
-              className="hover:text-yellow-400 font-semibold transition duration-300"
-              onClick={() => setMenuOpen(false)}
-            >
-              Трафик и Клиенты
-            </a>
-            <a
-              href="#"
-              className="hover:text-yellow-400 font-semibold transition duration-300"
-              onClick={() => setMenuOpen(false)}
-            >
-              Криптокомпании
-            </a>
-            <a
-              href="#"
-              className="hover:text-yellow-400 font-semibold transition duration-300"
-              onClick={() => setMenuOpen(false)}
-            >
-              Ликвидность
-            </a>
-            <a
-              href="#"
-              className="hover:text-yellow-400 font-semibold transition duration-300"
-              onClick={() => setMenuOpen(false)}
-            >
-              Стать партнёром
-            </a>
-          </nav>
-
-          {/* Переключатель языка */}
-          <div className="flex items-center gap-2 mt-12">
-            <Globe size={20} />
+          {/* Меню */}
+          <div className="relative bg-black w-full max-w-md mx-auto p-6 transform transition-transform duration-300 translate-y-0">
+            {/* Кнопка закрытия */}
             <button
-              onClick={toggleLanguage}
-              className="hover:text-yellow-400 font-semibold transition duration-300"
+              className="absolute top-4 right-4 text-gray-400 hover:text-white text-3xl"
+              onClick={closeMenu}
             >
-              {language === "ru" ? "Русский" : "English"}
+              <X />
             </button>
-          </div>
 
-          {/* Кнопка "Покупаем трафик" */}
-          <button className="bg-yellow-400 text-black px-6 py-3 rounded-xl shadow hover:scale-110 transition-transform duration-300 mt-12">
-            Покупаем трафик
-          </button>
+            {/* Ссылки меню */}
+            <nav className="flex flex-col gap-6 text-lg text-center mt-12">
+              <a
+                href="#"
+                className="hover:text-yellow-400 font-semibold transition duration-300"
+                onClick={closeMenu}
+              >
+                Трафик и Клиенты
+              </a>
+              <a
+                href="#"
+                className="hover:text-yellow-400 font-semibold transition duration-300"
+                onClick={closeMenu}
+              >
+                Криптокомпании
+              </a>
+              <a
+                href="#"
+                className="hover:text-yellow-400 font-semibold transition duration-300"
+                onClick={closeMenu}
+              >
+                Ликвидность
+              </a>
+              <a
+                href="#"
+                className="hover:text-yellow-400 font-semibold transition duration-300"
+                onClick={closeMenu}
+              >
+                Стать партнёром
+              </a>
+            </nav>
+
+            {/* Переключатель языка и кнопка */}
+            <div className="flex flex-col items-center gap-4 mt-12">
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 text-white hover:text-yellow-400 transition duration-300"
+              >
+                <Globe size={20} />
+                {language === "ru" ? "Русский" : "English"}
+              </button>
+              <button className="bg-yellow-400 text-black px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+                Покупаем трафик
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </header>
