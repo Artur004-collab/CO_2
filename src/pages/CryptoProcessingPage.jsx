@@ -395,6 +395,22 @@ export default function CryptoProcessingPage() {
       <section className="bg-black text-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            {/* Правая часть: отзыв */}
+            <div
+              className="p-8 border border-gray-700 rounded-3xl shadow-lg bg-gradient-to-br from-[#111827] to-[#1f2937] max-w-[634px] w-full h-[200px] mx-auto flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center mb-4">
+                  <span className="text-yellow-400 text-xl">{reviews[currentReview].stars}</span>
+                </div>
+                <p className="text-sm italic mb-6 text-gray-300">{reviews[currentReview].text}</p>
+              </div>
+              <div>
+                <div className="font-semibold text-white">{reviews[currentReview].author}</div>
+                <div className="text-gray-400 text-sm">{reviews[currentReview].position}</div>
+              </div>
+            </div>
+
             {/* Левая часть: заголовок, описание и стрелочки */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Clients Speak Highly</h2>
@@ -431,22 +447,6 @@ export default function CryptoProcessingPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
-              </div>
-            </div>
-
-            {/* Правая часть: отзыв */}
-            <div
-              className="p-8 border border-gray-700 rounded-3xl shadow-lg bg-gradient-to-br from-[#111827] to-[#1f2937] max-w-[634px] w-full h-[200px] mx-auto flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center mb-4">
-                  <span className="text-yellow-400 text-xl">{reviews[currentReview].stars}</span>
-                </div>
-                <p className="text-sm italic mb-6 text-gray-300">{reviews[currentReview].text}</p>
-              </div>
-              <div>
-                <div className="font-semibold text-white">{reviews[currentReview].author}</div>
-                <div className="text-gray-400 text-sm">{reviews[currentReview].position}</div>
               </div>
             </div>
           </div>
