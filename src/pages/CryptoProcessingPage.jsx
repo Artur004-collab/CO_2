@@ -217,7 +217,7 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-water text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Liquidity Providers
+                OTC deals and liquidity
               </h5>
               <p className="text-gray-400 text-base">
                 We work only with verified platforms: Binance, Kraken, OKX.
