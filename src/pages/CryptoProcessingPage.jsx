@@ -365,7 +365,7 @@ export default function CryptoProcessingPage() {
             <div className="swiper">
               <div className="swiper-wrapper">
                 {/* Отзыв 1 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[560px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[568px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
