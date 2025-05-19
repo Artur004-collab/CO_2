@@ -127,6 +127,17 @@ export default function CryptoProcessingPage() {
             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt="Cardano" className="h-12 w-auto" />
             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6636.png" alt="Polkadot" className="h-12 w-auto" />
             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt="Dogecoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt="Tron" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="XRP" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png" alt="Litecoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png" alt="Avalanche" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png" alt="Chainlink" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Shiba Inu" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/512.png" alt="Stellar" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/328.png" alt="Monero" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png" alt="VeChain" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2011.png" alt="Tezos" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png" alt="Cosmos" className="h-12 w-auto" />
           </div>
         </div>
 
