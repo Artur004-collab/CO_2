@@ -286,7 +286,7 @@ export default function CryptoProcessingPage() {
               <img
                 src="/images/1.jpg" // Пример изображения
                 alt="About Us"
-                className="rounded-3xl shadow-lg w-80 h-auto"
+                className="rounded-3xl shadow-lg w-90 h-auto"
               />
               <div className="absolute bottom-4 right-4 bg-yellow-400 text-black px-6 py-4 rounded-lg shadow-lg">
                 <h4 className="text-2xl font-bold">15+ Years of Experience</h4>
