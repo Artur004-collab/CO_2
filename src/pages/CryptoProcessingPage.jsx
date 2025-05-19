@@ -233,7 +233,7 @@ export default function CryptoProcessingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Карточка 1 */}
             <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700">
-              <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
+              <div className="absolute -top-8 -right-8 bg-[#c98f0d] text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
                 <i className="fas fa-wallet text-3xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
