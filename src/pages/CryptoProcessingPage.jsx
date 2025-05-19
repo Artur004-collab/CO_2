@@ -284,8 +284,8 @@ export default function CryptoProcessingPage() {
             {/* Левая часть: изображение */}
             <div className="relative">
               <img
-                src="https://via.placeholder.com/600x400"
-                alt="О нас"
+                src="https://source.unsplash.com/600x400/?technology,innovation" // Пример изображения
+                alt="About Us"
                 className="rounded-3xl shadow-lg"
               />
               <div className="absolute bottom-4 left-4 bg-yellow-400 text-black px-6 py-4 rounded-lg shadow-lg">
