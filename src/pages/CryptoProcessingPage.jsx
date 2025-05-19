@@ -191,10 +191,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-credit-card text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Crypto Gateway & Acquiring
+                Gateway & Acquiring
               </h5>
               <p className="text-gray-400 text-base">
-                Accept payments in BTC, ETH, USDT. No KYC, via API or Telegram.
+                Accept payments on your website in BTC, ETH, USDT and other tokens.
               </p>
             </div>
 
