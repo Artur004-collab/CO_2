@@ -26,7 +26,7 @@ export default function CryptoProcessingPage() {
   useEffect(() => {
     new Swiper(".swiper", {
       modules: [Navigation, Autoplay],
-      loop: true,
+      loop: true, // Зацикливание
       autoplay: {
         delay: 4000, // Интервал 4 секунды
       },
@@ -365,7 +365,7 @@ export default function CryptoProcessingPage() {
             <div className="swiper">
               <div className="swiper-wrapper">
                 {/* Отзыв 1 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[568px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[600px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
@@ -398,18 +398,6 @@ export default function CryptoProcessingPage() {
                   </p>
                   <div className="font-semibold text-white">John Doe</div>
                   <div className="text-gray-400 text-sm">CTO at FinTech Solutions</div>
-                </div>
-
-                {/* Отзыв 4 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[600px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
-                  <div className="flex items-center mb-4">
-                    <span className="text-yellow-400 text-xl">★★★★☆</span>
-                  </div>
-                  <p className="text-sm italic mb-6 text-gray-300">
-                    “Cryptoopen helped us scale our payment system globally. Highly recommend!”
-                  </p>
-                  <div className="font-semibold text-white">Emily Zhang</div>
-                  <div className="text-gray-400 text-sm">Head of Operations at CryptoPay</div>
                 </div>
               </div>
             </div>
