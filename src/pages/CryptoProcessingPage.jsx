@@ -204,10 +204,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-sync-alt text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Crypto Conversion
+                Crypto Exchange
               </h5>
               <p className="text-gray-400 text-base">
-                Exchange assets to fiat at a fixed rate anytime.
+                Exchange assets to fiat at a fixed rate anytime. 
               </p>
             </div>
 
