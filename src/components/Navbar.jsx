@@ -24,13 +24,13 @@ export default function Navbar() {
         {/* Десктопное меню */}
         <nav className="hidden md:flex gap-8 text-sm text-gray-400 items-center">
           <a href="#" className="hover:text-white transition duration-300">
-            Трафик и Клиенты
+            Trafic for B2B
           </a>
           <a href="#" className="hover:text-white transition duration-300">
-            Legal
+            Legal for crypto
           </a>
           <a href="#" className="hover:text-white transition duration-300">
-            OTC-deals
+            OTC-Deals
           </a>
           <a href="#" className="hover:text-white transition duration-300">
             Стать партнёром
