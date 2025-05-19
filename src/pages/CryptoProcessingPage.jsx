@@ -159,9 +159,9 @@ export default function CryptoProcessingPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Заголовок и подзаголовок */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-extrabold text-yellow-400 mb-4">Наши возможности</h2>
+            <h2 className="text-5xl font-extrabold text-yellow-400 mb-4">With us you will do</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Мы предлагаем полный спектр услуг для работы с криптовалютами. Выберите нужное — или используйте всё сразу.
+              We offer a full range of services for working with cryptocurrencies. Choose what you need - or use them all at once.
             </p>
           </div>
 
