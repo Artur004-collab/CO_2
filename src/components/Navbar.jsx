@@ -3,7 +3,7 @@ import { Globe, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("ru");
+  const [language, setLanguage] = useState("en");
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "ru" ? "en" : "ru"));
