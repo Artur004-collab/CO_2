@@ -230,10 +230,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-handshake text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Partnership Program
+                Company and Licences
               </h5>
               <p className="text-gray-400 text-base">
-                Invite clients and earn a percentage of their transactions.
+                Legal support in company registration and licensing of crypto activities
               </p>
             </div>
 
