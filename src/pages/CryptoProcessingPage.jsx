@@ -321,9 +321,6 @@ export default function CryptoProcessingPage() {
                   </p>
                 </div>
               </div>
-              {/* <button className="mt-6 bg-yellow-400 text-black font-bold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition-transform">
-                Узнать больше
-              </button>*/}
             </div>
           </div>
         </div>
