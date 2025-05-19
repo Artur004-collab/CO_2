@@ -426,7 +426,7 @@ export default function CryptoProcessingPage() {
 
             {/* Правая часть: отзыв */}
             <div
-              className="p-8 border border-gray-700 rounded-3xl shadow-lg bg-gradient-to-br from-[#111827] to-[#1f2937] max-w-[624px] w-full h-[300px] mx-auto flex flex-col justify-between"
+              className="p-8 border border-gray-700 rounded-3xl shadow-lg bg-gradient-to-br from-[#111827] to-[#1f2937] max-w-[624px] w-full h-[200px] mx-auto flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center mb-4">
