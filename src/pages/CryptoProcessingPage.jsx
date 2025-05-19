@@ -425,7 +425,7 @@ export default function CryptoProcessingPage() {
             </div>
 
             {/* Правая часть: отзыв */}
-            <div className="p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[600px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
+            <div className="p-8 border border-gray-700 rounded-3xl shadow-lg bg-gradient-to-br from-[#111827] to-[#1f2937] max-w-[600px] w-full mx-auto">
               <div className="flex items-center mb-4">
                 <span className="text-yellow-400 text-xl">{reviews[currentReview].stars}</span>
               </div>
