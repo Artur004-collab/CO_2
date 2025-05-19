@@ -120,7 +120,7 @@ export default function Navbar() {
                 {language === "ru" ? "Русский" : "English"}
               </button>*/}
               <button className="bg-yellow-400 text-black px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
-                Покупаем трафик
+                We by Trafic
               </button>
             </div>
           </div>
