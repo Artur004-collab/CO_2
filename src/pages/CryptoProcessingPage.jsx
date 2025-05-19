@@ -28,7 +28,7 @@ export default function CryptoProcessingPage() {
       modules: [Navigation, Autoplay],
       loop: true,
       autoplay: {
-        delay: 6000,
+        delay: 4000, // Интервал 4 секунды
       },
       navigation: {
         nextEl: "#next",
@@ -365,7 +365,7 @@ export default function CryptoProcessingPage() {
             <div className="swiper">
               <div className="swiper-wrapper">
                 {/* Отзыв 1 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg max-w-[500px] mx-auto">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
@@ -377,7 +377,7 @@ export default function CryptoProcessingPage() {
                 </div>
 
                 {/* Отзыв 2 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg max-w-[500px] mx-auto">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★☆</span>
                   </div>
@@ -389,7 +389,7 @@ export default function CryptoProcessingPage() {
                 </div>
 
                 {/* Отзыв 3 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg max-w-[500px] mx-auto">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
@@ -401,7 +401,7 @@ export default function CryptoProcessingPage() {
                 </div>
 
                 {/* Отзыв 4 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg max-w-[500px] mx-auto">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★☆</span>
                   </div>
