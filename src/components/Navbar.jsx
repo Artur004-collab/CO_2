@@ -33,7 +33,7 @@ export default function Navbar() {
             OTC-Deals
           </a>
           <a href="#" className="hover:text-white transition duration-300">
-            Стать партнёром
+            Offers and fees
           </a>
           <div className="flex items-center gap-4">
             {/* Переключатель языка */}
@@ -45,7 +45,7 @@ export default function Navbar() {
             </button>*/}
             {/* Кнопка "Покупаем трафик" */}
             <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:bg-yellow-400 hover:text-black transition-transform duration-300">
-              Покупаем трафик
+              We by Trafic
             </button>
           </div>
         </nav>
@@ -85,40 +85,40 @@ export default function Navbar() {
                 className="hover:text-yellow-400 font-semibold transition duration-300"
                 onClick={closeMenu}
               >
-                Трафик и Клиенты
+                Trafic for B2B
               </a>
               <a
                 href="#"
                 className="hover:text-yellow-400 font-semibold transition duration-300"
                 onClick={closeMenu}
               >
-                Криптокомпании
+                Legal for crypto
               </a>
               <a
                 href="#"
                 className="hover:text-yellow-400 font-semibold transition duration-300"
                 onClick={closeMenu}
               >
-                Ликвидность
+                OTC-Deals
               </a>
               <a
                 href="#"
                 className="hover:text-yellow-400 font-semibold transition duration-300"
                 onClick={closeMenu}
               >
-                Стать партнёром
+                Offers and fees
               </a>
             </nav>
 
             {/* Переключатель языка и кнопка */}
             <div className="flex flex-col items-center gap-4 mt-12">
-              <button
+              {/*<button
                 onClick={toggleLanguage}
                 className="flex items-center gap-2 text-white hover:text-yellow-400 transition duration-300"
               >
                 <Globe size={20} />
                 {language === "ru" ? "Русский" : "English"}
-              </button>
+              </button>*/}
               <button className="bg-yellow-400 text-black px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
                 Покупаем трафик
               </button>
