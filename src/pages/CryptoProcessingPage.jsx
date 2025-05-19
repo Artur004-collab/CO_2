@@ -337,7 +337,7 @@ export default function CryptoProcessingPage() {
       </section>
 
       {/* Отзывной блок */}
-      <section className="bg-[#081b22] text-white py-16">
+      <section className="bg-black text-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* Левая часть: заголовок, описание и стрелочки */}
@@ -365,7 +365,7 @@ export default function CryptoProcessingPage() {
             <div className="swiper">
               <div className="swiper-wrapper">
                 {/* Отзыв 1 */}
-                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md">
+                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md w-full">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
@@ -377,7 +377,7 @@ export default function CryptoProcessingPage() {
                 </div>
 
                 {/* Отзыв 2 */}
-                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md">
+                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md w-full">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★☆</span>
                   </div>
