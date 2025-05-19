@@ -6,6 +6,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function CryptoProcessingPage() {
   const [tab, setTab] = useState("accept");
