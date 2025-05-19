@@ -314,10 +314,19 @@ export default function CryptoProcessingPage() {
           <div className="text-center mt-12">
             <a
               href="#more-services"
-              className="text-yellow-400 text-lg font-semibold flex items-center justify-center hover:underline"
+              className="text-yellow-400 text-lg font-semibold flex items-center justify-center transition-all duration-300"
+              style={{ fontSize: "1rem" }} // Базовый размер шрифта
+              onMouseEnter={(e) => {
+                e.currentTarget.style.fontSize = "1.125rem"; // Увеличение шрифта на 2
+                e.currentTarget.querySelector("svg").style.transform = "translateX(4px)"; // Движение стрелки
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.fontSize = "1rem"; // Возврат к базовому размеру
+                e.currentTarget.querySelector("svg").style.transform = "translateX(0)"; // Возврат стрелки
+              }}
             >
               See more ...
-              <ArrowRight size={20} className="ml-2" />
+              <ArrowRight size={20} className="ml-2 transition-transform duration-300" />
             </a>
           </div>
         </div>
