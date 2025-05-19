@@ -13,6 +13,28 @@ export default function CryptoProcessingPage() {
   const [language, setLanguage] = useState("en");
   const [chatOpen, setChatOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [currentReview, setCurrentReview] = useState(0); // Текущий отзыв
+
+  const reviews = [
+    {
+      stars: "★★★★★",
+      text: "“With Cryptoopen, we integrated payments in 1 day. Support is 🔥”",
+      author: "Anna Petrova",
+      position: "CEO Web3 Tech",
+    },
+    {
+      stars: "★★★★☆",
+      text: "“Very flexible. Telegram bot saved us hours of work.”",
+      author: "Igor Smirnov",
+      position: "Product Manager at BitFlow",
+    },
+    {
+      stars: "★★★★★",
+      text: "“The integration process was seamless, and the support team was always available.”",
+      author: "John Doe",
+      position: "CTO at FinTech Solutions",
+    },
+  ];
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "ru" ? "en" : "ru"));
@@ -44,6 +66,14 @@ export default function CryptoProcessingPage() {
     };
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentReview((prev) => (prev + 1) % reviews.length); // Зацикливание
+    }, 4000);
+
+    return () => clearInterval(interval); // Очистка интервала при размонтировании
+  }, [reviews.length]);
+
   const scrollToServices = () => {
     const section = document.getElementById("services");
     section?.scrollIntoView({ behavior: "smooth" });
@@ -53,6 +83,14 @@ export default function CryptoProcessingPage() {
     if (newTab !== tab) {
       setTab(newTab);
     }
+  };
+
+  const handlePrev = () => {
+    setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
+  };
+
+  const handleNext = () => {
+    setCurrentReview((prev) => (prev + 1) % reviews.length);
   };
 
   const texts = {
@@ -355,58 +393,45 @@ export default function CryptoProcessingPage() {
               </p>
               {/* Стрелочки */}
               <div className="flex gap-4">
-                <button id="prev" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <button
+                  onClick={handlePrev}
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]"
+                >
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
-                <button id="next" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <button
+                  onClick={handleNext}
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]"
+                >
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
             </div>
 
-            {/* Правая часть: отзывы */}
-            <div className="swiper">
-              <div className="swiper-wrapper">
-                {/* Отзыв 1 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[600px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
-                  <div className="flex items-center mb-4">
-                    <span className="text-yellow-400 text-xl">★★★★★</span>
-                  </div>
-                  <p className="text-sm italic mb-6 text-gray-300">
-                    “With Cryptoopen, we integrated payments in 1 day. Support is 🔥”
-                  </p>
-                  <div className="font-semibold text-white">Anna Petrova</div>
-                  <div className="text-gray-400 text-sm">CEO Web3 Tech</div>
-                </div>
-
-                {/* Отзыв 2 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[600px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
-                  <div className="flex items-center mb-4">
-                    <span className="text-yellow-400 text-xl">★★★★☆</span>
-                  </div>
-                  <p className="text-sm italic mb-6 text-gray-300">
-                    “Very flexible. Telegram bot saved us hours of work.”
-                  </p>
-                  <div className="font-semibold text-white">Igor Smirnov</div>
-                  <div className="text-gray-400 text-sm">Product Manager at BitFlow</div>
-                </div>
-
-                {/* Отзыв 3 */}
-                <div className="swiper-slide p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[600px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
-                  <div className="flex items-center mb-4">
-                    <span className="text-yellow-400 text-xl">★★★★★</span>
-                  </div>
-                  <p className="text-sm italic mb-6 text-gray-300">
-                    “The integration process was seamless, and the support team was always available.”
-                  </p>
-                  <div className="font-semibold text-white">John Doe</div>
-                  <div className="text-gray-400 text-sm">CTO at FinTech Solutions</div>
-                </div>
+            {/* Правая часть: отзыв */}
+            <div className="p-8 border border-gray-700 rounded-3xl shadow-lg max-w-[600px] mx-auto bg-gradient-to-br from-[#111827] to-[#1f2937]">
+              <div className="flex items-center mb-4">
+                <span className="text-yellow-400 text-xl">{reviews[currentReview].stars}</span>
               </div>
+              <p className="text-sm italic mb-6 text-gray-300">{reviews[currentReview].text}</p>
+              <div className="font-semibold text-white">{reviews[currentReview].author}</div>
+              <div className="text-gray-400 text-sm">{reviews[currentReview].position}</div>
             </div>
           </div>
         </div>
