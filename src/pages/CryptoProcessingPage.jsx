@@ -188,9 +188,8 @@ export default function CryptoProcessingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Карточка 1 */}
             <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              {/* Увеличенный кружок, расположенный на углу карточки */}
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-wallet text-3xl"></i> {/* Иконка для платежей */}
+                <i className="fas fa-wallet text-3xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
                 Gateway & Acquiring
@@ -203,7 +202,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 2 */}
             <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-exchange-alt text-3xl"></i> {/* Иконка для обмена */}
+                <i className="fas fa-exchange-alt text-3xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
                 Crypto Exchange
@@ -216,7 +215,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 3 */}
             <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-chart-line text-3xl"></i> {/* Иконка для ликвидности */}
+                <i className="fas fa-chart-line text-3xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
                 OTC deals and Liquidity
@@ -229,7 +228,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 4 */}
             <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-building text-3xl"></i> {/* Иконка для компаний */}
+                <i className="fas fa-building text-3xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
                 Company and Licences
@@ -242,7 +241,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 5 */}
             <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-bullhorn text-3xl"></i> {/* Иконка для маркетинга */}
+                <i className="fas fa-bullhorn text-3xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
                 Traffic and Clients
@@ -255,7 +254,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 6 */}
             <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-headset text-3xl"></i> {/* Иконка для поддержки */}
+                <i className="fas fa-headset text-3xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
                 24/7 Support
@@ -264,6 +263,17 @@ export default function CryptoProcessingPage() {
                 Our specialists are available in Telegram around the clock. We provide prompt and effective support to address your concerns anytime.
               </p>
             </div>
+          </div>
+
+          {/* Надпись-ссылка */}
+          <div className="text-center mt-12">
+            <a
+              href="#more-services"
+              className="text-yellow-400 text-lg font-semibold flex items-center justify-center hover:underline"
+            >
+              See more ...
+              <ArrowRight size={20} className="ml-2" />
+            </a>
           </div>
         </div>
       </section>
