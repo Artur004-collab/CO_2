@@ -48,30 +48,16 @@ export default function CryptoProcessingPage() {
   };
 
   const texts = {
-    ru: {
-      title: "Принимайте крипту. Без головной боли.",
-      description: "Мгновенные платежи, глобальный охват, надёжная защита.",
-      startIntegration: "Начать интеграцию",
-      learnMore: "Узнай больше",
-      whatWeOffer: "Что мы предлагаем",
-      liquidity: "Только проверенные поставщики ликвидности",
-      globalReach: "Глобальные возможности",
-      reliability: "Надёжность",
-      startNow: "Начнём?",
-      privacy: "Политика конфиденциальности",
-    },
-    en: {
-      title: "Accept Crypto. Hassle-Free.",
-      description: "Instant payments, global reach, trusted security.",
-      startIntegration: "Start Integration",
-      learnMore: "Learn More",
-      whatWeOffer: "What We Offer",
-      liquidity: "Only Verified Liquidity Providers",
-      globalReach: "Global Opportunities",
-      reliability: "Reliability",
-      startNow: "Let's Start",
-      privacy: "Privacy Policy",
-    },
+    title: "Accept Crypto. Hassle-Free.",
+    description: "Instant payments, global reach, trusted security.",
+    startIntegration: "Start Integration",
+    learnMore: "Learn More",
+    whatWeOffer: "What We Offer",
+    liquidity: "Only Verified Liquidity Providers",
+    globalReach: "Global Opportunities",
+    reliability: "Reliability",
+    startNow: "Let's Start",
+    privacy: "Privacy Policy",
   };
 
   if (loading) {
@@ -93,19 +79,19 @@ export default function CryptoProcessingPage() {
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center px-6 text-center bg-black">
         <h1 className="text-5xl font-extrabold text-yellow-400 mb-6">
-          {texts[language].title}
+          {texts.title}
         </h1>
         <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
-          {texts[language].description}
+          {texts.description}
         </p>
         <button className="bg-yellow-400 text-black font-bold px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
-          {texts[language].startIntegration}
+          {texts.startIntegration}
         </button>
         <div
           onClick={scrollToServices}
           className="mt-6 flex items-center justify-center text-sm text-gray-400 hover:text-yellow-400 cursor-pointer"
         >
-          <span className="mr-2">{texts[language].learnMore}</span>
+          <span className="mr-2">{texts.learnMore}</span>
           <ArrowRight size={16} />
         </div>
 
@@ -400,7 +386,7 @@ export default function CryptoProcessingPage() {
 
       {/* Footer */}
       <footer className="bg-black py-6 text-center text-gray-400">
-        <p>{texts[language].privacy}</p>
+        <p>{texts.privacy}</p>
       </footer>
 
       {/* Chat Button */}
