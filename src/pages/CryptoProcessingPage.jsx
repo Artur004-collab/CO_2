@@ -189,7 +189,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 1 */}
             <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-credit-card text-2xl"></i>
+                <i className="fas fa-wallet text-2xl"></i> {/* Иконка для платежей */}
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 Gateway & Acquiring
@@ -202,7 +202,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 2 */}
             <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-exchange-alt text-2xl"></i>
+                <i className="fas fa-exchange-alt text-2xl"></i> {/* Иконка для обмена */}
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 Crypto Exchange
@@ -215,7 +215,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 3 */}
             <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-water text-2xl"></i>
+                <i className="fas fa-chart-line text-2xl"></i> {/* Иконка для ликвидности */}
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 OTC deals and Liquidity
@@ -228,7 +228,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 4 */}
             <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-building text-2xl"></i>
+                <i className="fas fa-building text-2xl"></i> {/* Иконка для компаний */}
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 Company and Licences
@@ -241,7 +241,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 5 */}
             <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
-                <i className="fab fa-telegram-plane text-2xl"></i>
+                <i className="fas fa-bullhorn text-2xl"></i> {/* Иконка для маркетинга */}
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 Traffic and Clients
@@ -254,7 +254,7 @@ export default function CryptoProcessingPage() {
             {/* Карточка 6 */}
             <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
               <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-headset text-2xl"></i>
+                <i className="fas fa-headset text-2xl"></i> {/* Иконка для поддержки */}
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 24/7 Support
