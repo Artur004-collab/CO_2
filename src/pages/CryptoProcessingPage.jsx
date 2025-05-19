@@ -231,8 +231,8 @@ export default function CryptoProcessingPage() {
 
           {/* Карточки */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Карточка 1 */}
-            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+            {/* Карточка */}
+            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700">
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
                 <i className="fas fa-wallet text-3xl"></i>
               </div>
@@ -244,8 +244,8 @@ export default function CryptoProcessingPage() {
               </p>
             </div>
 
-            {/* Карточка 2 */}
-            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+            {/* Повторите для остальных карточек */}
+            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700">
               <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
                 <i className="fas fa-exchange-alt text-3xl"></i>
               </div>
@@ -254,58 +254,6 @@ export default function CryptoProcessingPage() {
               </h5>
               <p className="text-gray-400 text-base text-justify">
                 Exchange assets to fiat at a fixed rate anytime. Our service provides competitive rates and ensures that your transactions are processed quickly and securely.
-              </p>
-            </div>
-
-            {/* Карточка 3 */}
-            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-chart-line text-3xl"></i>
-              </div>
-              <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
-                OTC deals and Liquidity
-              </h5>
-              <p className="text-gray-400 text-base text-justify">
-                We work only with verified platforms: Binance, Kraken, OKX. Our OTC services ensure high liquidity and competitive pricing for large transactions.
-              </p>
-            </div>
-
-            {/* Карточка 4 */}
-            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-building text-3xl"></i>
-              </div>
-              <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
-                Company and Licences
-              </h5>
-              <p className="text-gray-400 text-base text-justify">
-                Legal support in company registration and licensing of crypto activities. We help you navigate the complexities of compliance and ensure your business operates within legal frameworks.
-              </p>
-            </div>
-
-            {/* Карточка 5 */}
-            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-bullhorn text-3xl"></i>
-              </div>
-              <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
-                Traffic and Clients
-              </h5>
-              <p className="text-gray-400 text-base text-justify">
-                A flow of warm leads to your sales department or we bring in a direct client. Our marketing strategies ensure you reach the right audience effectively.
-              </p>
-            </div>
-
-            {/* Карточка 6 */}
-            <div className="group relative flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="absolute -top-8 -right-8 bg-yellow-400 text-black w-20 h-20 flex items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:rotate-12">
-                <i className="fas fa-headset text-3xl"></i>
-              </div>
-              <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
-                24/7 Support
-              </h5>
-              <p className="text-gray-400 text-base text-justify">
-                Our specialists are available in Telegram around the clock. We provide prompt and effective support to address your concerns anytime.
               </p>
             </div>
           </div>
