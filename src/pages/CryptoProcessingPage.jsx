@@ -194,7 +194,7 @@ export default function CryptoProcessingPage() {
                 Gateway & Acquiring
               </h5>
               <p className="text-gray-400 text-base">
-                Accept payments on your website in BTC, ETH, USDT and other tokens.
+                Accept payments on your website in BTC, ETH, USDT and other tokens. Our platform ensures secure and fast transactions, making it easy for businesses to integrate cryptocurrency payments.
               </p>
             </div>
 
@@ -207,7 +207,7 @@ export default function CryptoProcessingPage() {
                 Crypto Exchange
               </h5>
               <p className="text-gray-400 text-base">
-                Exchange assets to fiat at a fixed rate anytime. 
+                Exchange assets to fiat at a fixed rate anytime. Our service provides competitive rates and ensures that your transactions are processed quickly and securely.
               </p>
             </div>
 
@@ -220,7 +220,7 @@ export default function CryptoProcessingPage() {
                 OTC deals and Liquidity
               </h5>
               <p className="text-gray-400 text-base">
-                We work only with verified platforms: Binance, Kraken, OKX.
+                We work only with verified platforms: Binance, Kraken, OKX. Our OTC services ensure high liquidity and competitive pricing for large transactions.
               </p>
             </div>
 
@@ -233,7 +233,7 @@ export default function CryptoProcessingPage() {
                 Company and Licences
               </h5>
               <p className="text-gray-400 text-base">
-                Legal support in company registration and licensing of crypto activities
+                Legal support in company registration and licensing of crypto activities. We help you navigate the complexities of compliance and ensure your business operates within legal frameworks.
               </p>
             </div>
 
@@ -246,7 +246,7 @@ export default function CryptoProcessingPage() {
                 Trafic and Clients
               </h5>
               <p className="text-gray-400 text-base">
-                A flow of warm leads to your sales department or we bring in a direct client
+                A flow of warm leads to your sales department or we bring in a direct client. Our marketing strategies ensure you reach the right audience effectively.
               </p>
             </div>
 
@@ -259,7 +259,7 @@ export default function CryptoProcessingPage() {
                 24/7 Support
               </h5>
               <p className="text-gray-400 text-base">
-                Our specialists are available in Telegram around the clock.
+                Our specialists are available in Telegram around the clock. We provide prompt and effective support to address your concerns anytime.
               </p>
             </div>
           </div>
