@@ -288,7 +288,7 @@ export default function CryptoProcessingPage() {
                 alt="About Us"
                 className="rounded-3xl shadow-lg"
               />
-              <div className="absolute bottom-4 left-4 bg-yellow-400 text-black px-6 py-4 rounded-lg shadow-lg">
+              <div className="absolute bottom-4 left-12 bg-yellow-400 text-black px-6 py-4 rounded-lg shadow-lg">
                 <h4 className="text-2xl font-bold">15+ Years of Experience</h4>
                 <p className="text-sm">In the field of Business & Payments solutions</p>
               </div>
