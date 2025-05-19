@@ -464,7 +464,7 @@ export default function CryptoProcessingPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Card 1 */}
-            <div className="bg-gray-800 rounded-3xl p-6 h-full text-center border border-yellow-400">
+            <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
               <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
                 🗝
               </div>
