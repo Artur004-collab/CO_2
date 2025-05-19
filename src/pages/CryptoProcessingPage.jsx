@@ -365,7 +365,7 @@ export default function CryptoProcessingPage() {
             <div className="swiper">
               <div className="swiper-wrapper">
                 {/* Отзыв 1 */}
-                <div className="swiper-slide bg-gradient-to-br from-[#111827] to-[#1f2937] rounded-3xl p-8 shadow-lg border border-gray-700 max-w-[500px] mx-auto">
+                <div className="swiper-slide bg-gradient-to-br from-[#111827] to-[#1f2937] rounded-3xl p-8 shadow-lg border border-gray-700 w-full">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
@@ -377,7 +377,7 @@ export default function CryptoProcessingPage() {
                 </div>
 
                 {/* Отзыв 2 */}
-                <div className="swiper-slide bg-gradient-to-br from-[#111827] to-[#1f2937] rounded-3xl p-8 shadow-lg border border-gray-700 max-w-[500px] mx-auto">
+                <div className="swiper-slide bg-gradient-to-br from-[#111827] to-[#1f2937] rounded-3xl p-8 shadow-lg border border-gray-700 w-full">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★☆</span>
                   </div>
