@@ -280,7 +280,7 @@ export default function CryptoProcessingPage() {
           </div>
 
           {/* Основной контент */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             {/* Левая часть: изображение */}
             <div className="relative">
               <img
@@ -290,7 +290,7 @@ export default function CryptoProcessingPage() {
               />
               <div className="absolute bottom-4 left-4 bg-yellow-400 text-black px-6 py-4 rounded-lg shadow-lg">
                 <h4 className="text-2xl font-bold">15+ Years of Experience</h4>
-                <p className="text-sm">In the field of innovative solutions</p>
+                <p className="text-sm">In the field of Business & Payments solutions</p>
               </div>
             </div>
 
