@@ -385,7 +385,7 @@ export default function CryptoProcessingPage() {
       {chatOpen && (
         <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-neutral-900 rounded-2xl shadow-lg p-4 z-50">
           <div className="flex justify-between items-center mb-3">
-            <h3 className="text-white text-lg font-semibold">Чат поддержки</h3>
+            <h3 className="text-white text-lg font-semibold">Fast Chat</h3>
             <button
               onClick={() => setChatOpen(false)}
               className="text-gray-400 hover:text-white"
@@ -398,7 +398,7 @@ export default function CryptoProcessingPage() {
             placeholder="Напишите сообщение..."
           />
           <button className="w-full bg-white text-black py-2 rounded-xl hover:scale-105 transition-transform duration-300 mt-3">
-            Отправить
+            Send
           </button>
         </div>
       )}
