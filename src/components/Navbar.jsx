@@ -27,10 +27,10 @@ export default function Navbar() {
             Трафик и Клиенты
           </a>
           <a href="#" className="hover:text-white transition duration-300">
-            Криптокомпании
+            Legal
           </a>
           <a href="#" className="hover:text-white transition duration-300">
-            Ликвидность
+            OTC-deals
           </a>
           <a href="#" className="hover:text-white transition duration-300">
             Стать партнёром
