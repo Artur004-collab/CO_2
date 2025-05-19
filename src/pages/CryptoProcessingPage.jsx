@@ -186,80 +186,80 @@ export default function CryptoProcessingPage() {
           {/* Карточки */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Карточка 1 */}
-            <div className="flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6">
+            <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
                 <i className="fas fa-credit-card text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 Gateway & Acquiring
               </h5>
               <p className="text-gray-400 text-base text-justify">
-                Accept payments on your website in BTC, ETH, USDT and other tokens. Our platform ensures secure and fast transactions, making it easy for businesses to integrate cryptocurrency payments. You can rely on our robust infrastructure to handle high transaction volumes with ease.
+                Accept payments on your website in BTC, ETH, USDT and other tokens. Our platform ensures secure and fast transactions, making it easy for businesses to integrate cryptocurrency payments.
               </p>
             </div>
 
             {/* Карточка 2 */}
-            <div className="flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6">
-                <i className="fas fa-sync-alt text-2xl"></i>
+            <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
+                <i className="fas fa-exchange-alt text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 Crypto Exchange
               </h5>
               <p className="text-gray-400 text-base text-justify">
-                Exchange assets to fiat at a fixed rate anytime. Our service provides competitive rates and ensures that your transactions are processed quickly and securely. Whether you are a business or an individual, our platform is designed to meet your needs.
+                Exchange assets to fiat at a fixed rate anytime. Our service provides competitive rates and ensures that your transactions are processed quickly and securely.
               </p>
             </div>
 
             {/* Карточка 3 */}
-            <div className="flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6">
+            <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
                 <i className="fas fa-water text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 OTC deals and Liquidity
               </h5>
               <p className="text-gray-400 text-base text-justify">
-                We work only with verified platforms: Binance, Kraken, OKX. Our OTC services ensure high liquidity and competitive pricing for large transactions. We provide personalized support to help you execute your trades seamlessly.
+                We work only with verified platforms: Binance, Kraken, OKX. Our OTC services ensure high liquidity and competitive pricing for large transactions.
               </p>
             </div>
 
             {/* Карточка 4 */}
-            <div className="flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6">
-                <i className="fas fa-handshake text-2xl"></i>
+            <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
+                <i className="fas fa-building text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 Company and Licences
               </h5>
               <p className="text-gray-400 text-base text-justify">
-                Legal support in company registration and licensing of crypto activities. We help you navigate the complexities of compliance and ensure your business operates within legal frameworks. Trust us to handle the legalities while you focus on growth.
+                Legal support in company registration and licensing of crypto activities. We help you navigate the complexities of compliance and ensure your business operates within legal frameworks.
               </p>
             </div>
 
             {/* Карточка 5 */}
-            <div className="flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6">
-                <i className="fab fa-telegram text-2xl"></i>
+            <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
+                <i className="fab fa-telegram-plane text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
-                Trafic and Clients
+                Traffic and Clients
               </h5>
               <p className="text-gray-400 text-base text-justify">
-                A flow of warm leads to your sales department or we bring in a direct client. Our marketing strategies ensure you reach the right audience effectively. Let us help you grow your customer base with proven methods.
+                A flow of warm leads to your sales department or we bring in a direct client. Our marketing strategies ensure you reach the right audience effectively.
               </p>
             </div>
 
             {/* Карточка 6 */}
-            <div className="flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
-              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6">
+            <div className="group flex flex-col bg-gradient-to-br from-[#111827] to-[#1f2937] p-8 rounded-3xl shadow-lg border border-gray-700 hover:shadow-2xl transition-transform transform hover:scale-105">
+              <div className="flex items-center justify-center bg-yellow-400 text-black w-16 h-16 rounded-full shadow-lg mb-6 transition-transform duration-300 group-hover:rotate-12">
                 <i className="fas fa-headset text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center">
                 24/7 Support
               </h5>
               <p className="text-gray-400 text-base text-justify">
-                Our specialists are available in Telegram around the clock. We provide prompt and effective support to address your concerns anytime. Your satisfaction is our priority, and we are here to assist you whenever you need us.
+                Our specialists are available in Telegram around the clock. We provide prompt and effective support to address your concerns anytime.
               </p>
             </div>
           </div>
