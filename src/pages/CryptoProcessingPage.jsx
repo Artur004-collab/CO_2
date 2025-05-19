@@ -243,10 +243,10 @@ export default function CryptoProcessingPage() {
                 <i className="fab fa-telegram text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Trafic for crypto industry
+                Trafic and Clients
               </h5>
               <p className="text-gray-400 text-base">
-                All features are available via Telegram bot. No website needed.
+                A flow of warm leads to your sales department or we bring in a direct client
               </p>
             </div>
 
