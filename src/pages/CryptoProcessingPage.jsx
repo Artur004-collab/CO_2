@@ -453,59 +453,59 @@ export default function CryptoProcessingPage() {
         </div>
       </section>
 
-              {/* Fourth Block – Why Trust Matters */}
-<section id="trust" className="py-24 bg-black text-white">
-  <div className="max-w-7xl mx-auto px-6 md:px-12">
-    <div className="text-center mb-16">
-      <h2 className="text-5xl font-extrabold text-yellow-400 mb-4">Why Trust Matters</h2>
-      <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-        In the world of crypto, transparency and security come first. Here’s how we ensure it.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-      {/* Card 1 */}
-      <div className="bg-gray-800 rounded-3xl p-6 h-full text-center border border-yellow-400">
-        <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-          🗝
+      {/* Fourth Block – Why Trust Matters */}
+      <section id="trust" className="py-24 bg-black text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-extrabold text-yellow-400 mb-4">Why Trust Matters</h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              In the world of crypto, transparency and security come first. Here’s how we ensure it.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            {/* Card 1 */}
+            <div className="bg-gray-800 rounded-3xl p-6 h-full text-center border border-yellow-400">
+              <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
+                🗝
+              </div>
+              <h5 className="text-xl font-bold text-white mb-2">Escrow & Verification</h5>
+              <p className="text-gray-400 text-sm">
+                Secure deals managed through trusted intermediaries and verified identities.
+              </p>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
+              <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
+                📄
+              </div>
+              <h5 className="text-xl font-bold text-white mb-2">Transparent Terms</h5>
+              <p className="text-gray-400 text-sm">
+                Every transaction is governed by clear and open terms and policies.
+              </p>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
+              <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
+                ⚖
+              </div>
+              <h5 className="text-xl font-bold text-white mb-2">International Standards</h5>
+              <p className="text-gray-400 text-sm">
+                Operating in accordance with EU laws and global FATF recommendations.
+              </p>
+            </div>
+            {/* Card 4 */}
+            <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
+              <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
+                🛡
+              </div>
+              <h5 className="text-xl font-bold text-white mb-2">AML/KYC & NDA</h5>
+              <p className="text-gray-400 text-sm">
+                Compliant with data protection, confidentiality policies, and legal safeguards.
+              </p>
+            </div>
+          </div>
         </div>
-        <h5 className="text-xl font-bold text-white mb-2">Escrow & Verification</h5>
-        <p className="text-gray-400 text-sm">
-          Secure deals managed through trusted intermediaries and verified identities.
-        </p>
-      </div>
-      {/* Card 2 */}
-      <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
-        <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-          📄
-        </div>
-        <h5 className="text-xl font-bold text-white mb-2">Transparent Terms</h5>
-        <p className="text-gray-400 text-sm">
-          Every transaction is governed by clear and open terms and policies.
-        </p>
-      </div>
-      {/* Card 3 */}
-      <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
-        <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-          ⚖
-        </div>
-        <h5 className="text-xl font-bold text-white mb-2">International Standards</h5>
-        <p className="text-gray-400 text-sm">
-          Operating in accordance with EU laws and global FATF recommendations.
-        </p>
-      </div>
-      {/* Card 4 */}
-      <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
-        <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-          🛡
-        </div>
-        <h5 className="text-xl font-bold text-white mb-2">AML/KYC & NDA</h5>
-        <p className="text-gray-400 text-sm">
-          Compliant with data protection, confidentiality policies, and legal safeguards.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Footer */}
       <footer className="bg-black py-6 text-center text-gray-400">
