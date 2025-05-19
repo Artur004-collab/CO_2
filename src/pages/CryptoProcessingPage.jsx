@@ -339,54 +339,54 @@ export default function CryptoProcessingPage() {
       {/* Отзывной блок */}
       <section className="bg-[#081b22] text-white py-16">
         <div className="max-w-6xl mx-auto px-4">
-          {/* Заголовок и описание */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            {/* Левая часть: заголовок, описание и стрелочки */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Clients Speak Highly</h2>
-              <p className="text-gray-400 max-w-md">
+              <p className="text-gray-400 max-w-md mb-6">
                 Hear directly from those who have experienced the impact of our partnership and achieved their strategic goals.
               </p>
-            </div>
-            {/* Кнопки навигации */}
-            <div className="flex gap-4 mt-6 md:mt-0">
-              <button id="prev" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button id="next" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          {/* Слайдер */}
-          <div className="swiper">
-            <div className="swiper-wrapper">
-              {/* Отзыв 1 */}
-              <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md">
-                <div className="flex items-center mb-4">
-                  <span className="text-yellow-400 text-xl">★★★★★</span>
-                </div>
-                <p className="text-sm italic mb-6">
-                  “With Cryptoopen, we integrated payments in 1 day. Support is 🔥”
-                </p>
-                <div className="font-semibold">Anna Petrova</div>
-                <div className="text-gray-400 text-sm">CEO Web3 Tech</div>
+              {/* Стрелочки */}
+              <div className="flex gap-4">
+                <button id="prev" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button id="next" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0c222c] hover:bg-[#12303d]">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
+            </div>
 
-              {/* Отзыв 2 */}
-              <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md">
-                <div className="flex items-center mb-4">
-                  <span className="text-yellow-400 text-xl">★★★★☆</span>
+            {/* Правая часть: отзывы */}
+            <div className="swiper">
+              <div className="swiper-wrapper">
+                {/* Отзыв 1 */}
+                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <span className="text-yellow-400 text-xl">★★★★★</span>
+                  </div>
+                  <p className="text-sm italic mb-6">
+                    “With Cryptoopen, we integrated payments in 1 day. Support is 🔥”
+                  </p>
+                  <div className="font-semibold">Anna Petrova</div>
+                  <div className="text-gray-400 text-sm">CEO Web3 Tech</div>
                 </div>
-                <p className="text-sm italic mb-6">
-                  “Very flexible. Telegram bot saved us hours of work.”
-                </p>
-                <div className="font-semibold">Igor Smirnov</div>
-                <div className="text-gray-400 text-sm">Product Manager at BitFlow</div>
+
+                {/* Отзыв 2 */}
+                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <span className="text-yellow-400 text-xl">★★★★☆</span>
+                  </div>
+                  <p className="text-sm italic mb-6">
+                    “Very flexible. Telegram bot saved us hours of work.”
+                  </p>
+                  <div className="font-semibold">Igor Smirnov</div>
+                  <div className="text-gray-400 text-sm">Product Manager at BitFlow</div>
+                </div>
               </div>
             </div>
           </div>
