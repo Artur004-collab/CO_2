@@ -24,17 +24,22 @@ export default function CryptoProcessingPage() {
   }, []);
 
   useEffect(() => {
-    new Swiper(".swiper", {
+    const swiper = new Swiper(".swiper", {
       modules: [Navigation, Autoplay],
       loop: true, // Зацикливание
       autoplay: {
         delay: 4000, // Интервал 4 секунды
+        disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
       },
       navigation: {
         nextEl: "#next",
         prevEl: "#prev",
       },
     });
+
+    return () => {
+      swiper.destroy(); // Уничтожение Swiper при размонтировании компонента
+    };
   }, []);
 
   const scrollToServices = () => {
