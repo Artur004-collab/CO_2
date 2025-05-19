@@ -344,19 +344,10 @@ export default function CryptoProcessingPage() {
                   <span className="text-yellow-400 text-xl">★★★★★</span>
                 </div>
                 <p className="text-sm italic mb-6">
-                  “С Cryptoopen мы подключили платёжку за 1 день. Поддержка — 🔥”
+                  “With Cryptoopen, we integrated payments in 1 day. Support is 🔥”
                 </p>
-                <div className="flex items-center gap-3">
-                  <img
-                    src="https://randomuser.me/api/portraits/women/44.jpg"
-                    className="w-12 h-12 rounded-full object-cover"
-                    alt="Анна Петрова"
-                  />
-                  <div>
-                    <div className="font-semibold">Анна Петрова</div>
-                    <div className="text-gray-400 text-sm">CEO Web3 Tech</div>
-                  </div>
-                </div>
+                <div className="font-semibold">Anna Petrova</div>
+                <div className="text-gray-400 text-sm">CEO Web3 Tech</div>
               </div>
 
               {/* Отзыв 2 */}
@@ -365,19 +356,10 @@ export default function CryptoProcessingPage() {
                   <span className="text-yellow-400 text-xl">★★★★☆</span>
                 </div>
                 <p className="text-sm italic mb-6">
-                  “Очень гибко. Telegram-бот сэкономил нам часы работы.”
+                  “Very flexible. Telegram bot saved us hours of work.”
                 </p>
-                <div className="flex items-center gap-3">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                    className="w-12 h-12 rounded-full object-cover"
-                    alt="Игорь Смирнов"
-                  />
-                  <div>
-                    <div className="font-semibold">Игорь Смирнов</div>
-                    <div className="text-gray-400 text-sm">Продакт BitFlow</div>
-                  </div>
-                </div>
+                <div className="font-semibold">Igor Smirnov</div>
+                <div className="text-gray-400 text-sm">Product Manager at BitFlow</div>
               </div>
             </div>
           </div>
