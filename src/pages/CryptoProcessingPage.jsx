@@ -35,6 +35,8 @@ export default function CryptoProcessingPage() {
         nextEl: "#next",
         prevEl: "#prev",
       },
+      slidesPerView: 1, // Показывать только один слайд
+      spaceBetween: 30, // Расстояние между слайдами
     });
 
     return () => {
