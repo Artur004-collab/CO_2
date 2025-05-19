@@ -142,7 +142,7 @@ export default function CryptoProcessingPage() {
         </div>
 
         {/* Надпись под каруселью */}
-        <div className="text-center mt-6">
+        <div className="text-center mt-12">
           <p className="text-lg text-gray-400 font-semibold">
             Over 100+ Popular Crypto currencies and tokens supported
           </p>
