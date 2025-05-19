@@ -365,7 +365,7 @@ export default function CryptoProcessingPage() {
             <div className="swiper">
               <div className="swiper-wrapper">
                 {/* Отзыв 1 */}
-                <div className="swiper-slide p-8">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
@@ -377,7 +377,7 @@ export default function CryptoProcessingPage() {
                 </div>
 
                 {/* Отзыв 2 */}
-                <div className="swiper-slide p-8">
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★☆</span>
                   </div>
@@ -386,6 +386,30 @@ export default function CryptoProcessingPage() {
                   </p>
                   <div className="font-semibold text-white">Igor Smirnov</div>
                   <div className="text-gray-400 text-sm">Product Manager at BitFlow</div>
+                </div>
+
+                {/* Отзыв 3 */}
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
+                  <div className="flex items-center mb-4">
+                    <span className="text-yellow-400 text-xl">★★★★★</span>
+                  </div>
+                  <p className="text-sm italic mb-6 text-gray-300">
+                    “The integration process was seamless, and the support team was always available.”
+                  </p>
+                  <div className="font-semibold text-white">John Doe</div>
+                  <div className="text-gray-400 text-sm">CTO at FinTech Solutions</div>
+                </div>
+
+                {/* Отзыв 4 */}
+                <div className="swiper-slide p-8 border border-gray-700 rounded-lg shadow-lg">
+                  <div className="flex items-center mb-4">
+                    <span className="text-yellow-400 text-xl">★★★★☆</span>
+                  </div>
+                  <p className="text-sm italic mb-6 text-gray-300">
+                    “Cryptoopen helped us scale our payment system globally. Highly recommend!”
+                  </p>
+                  <div className="font-semibold text-white">Emily Zhang</div>
+                  <div className="text-gray-400 text-sm">Head of Operations at CryptoPay</div>
                 </div>
               </div>
             </div>
