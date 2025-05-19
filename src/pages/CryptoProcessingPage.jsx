@@ -466,7 +466,7 @@ export default function CryptoProcessingPage() {
             {/* Card 1 */}
             <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
               <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-                🗝
+                <i className="fas fa-key"></i> {/* Font Awesome Key Icon */}
               </div>
               <h5 className="text-xl font-bold text-white mb-2">Escrow & Verification</h5>
               <p className="text-gray-400 text-sm">
@@ -476,7 +476,7 @@ export default function CryptoProcessingPage() {
             {/* Card 2 */}
             <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
               <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-                📄
+                <i className="fas fa-file-alt"></i> {/* Font Awesome File Icon */}
               </div>
               <h5 className="text-xl font-bold text-white mb-2">Transparent Terms</h5>
               <p className="text-gray-400 text-sm">
@@ -486,7 +486,7 @@ export default function CryptoProcessingPage() {
             {/* Card 3 */}
             <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
               <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-                ⚖
+                <i className="fas fa-globe"></i> {/* Font Awesome Globe Icon */}
               </div>
               <h5 className="text-xl font-bold text-white mb-2">International Standards</h5>
               <p className="text-gray-400 text-sm">
@@ -496,7 +496,7 @@ export default function CryptoProcessingPage() {
             {/* Card 4 */}
             <div className="bg-dark rounded-3xl p-6 h-full text-center border border-yellow-400">
               <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
-                🛡
+                <i className="fas fa-shield-alt"></i> {/* Font Awesome Shield Icon */}
               </div>
               <h5 className="text-xl font-bold text-white mb-2">AML/KYC & NDA</h5>
               <p className="text-gray-400 text-sm">
