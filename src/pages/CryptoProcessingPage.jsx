@@ -425,13 +425,19 @@ export default function CryptoProcessingPage() {
             </div>
 
             {/* Правая часть: отзыв */}
-            <div className="p-8 border border-gray-700 rounded-3xl shadow-lg bg-gradient-to-br from-[#111827] to-[#1f2937] max-w-[624px] w-full mx-auto">
-              <div className="flex items-center mb-4">
-                <span className="text-yellow-400 text-xl">{reviews[currentReview].stars}</span>
+            <div
+              className="p-8 border border-gray-700 rounded-3xl shadow-lg bg-gradient-to-br from-[#111827] to-[#1f2937] max-w-[624px] w-full h-[300px] mx-auto flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center mb-4">
+                  <span className="text-yellow-400 text-xl">{reviews[currentReview].stars}</span>
+                </div>
+                <p className="text-sm italic mb-6 text-gray-300">{reviews[currentReview].text}</p>
               </div>
-              <p className="text-sm italic mb-6 text-gray-300">{reviews[currentReview].text}</p>
-              <div className="font-semibold text-white">{reviews[currentReview].author}</div>
-              <div className="text-gray-400 text-sm">{reviews[currentReview].position}</div>
+              <div>
+                <div className="font-semibold text-white">{reviews[currentReview].author}</div>
+                <div className="text-gray-400 text-sm">{reviews[currentReview].position}</div>
+              </div>
             </div>
           </div>
         </div>
