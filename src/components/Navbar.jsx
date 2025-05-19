@@ -37,12 +37,12 @@ export default function Navbar() {
           </a>
           <div className="flex items-center gap-4">
             {/* Переключатель языка */}
-            <button
+            {/*<button
               onClick={toggleLanguage}
               className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition duration-300"
             >
               <Globe size={18} /> {language === "ru" ? "Русский" : "English"}
-            </button>
+            </button>*/}
             {/* Кнопка "Покупаем трафик" */}
             <button className="bg-white text-black px-4 py-2 rounded-xl shadow hover:bg-yellow-400 hover:text-black transition-transform duration-300">
               Покупаем трафик
