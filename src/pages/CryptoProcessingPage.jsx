@@ -253,9 +253,9 @@ export default function CryptoProcessingPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Заголовок */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-extrabold text-yellow-400 mb-4">Узнайте больше о нас</h2>
+            <h2 className="text-5xl font-extrabold text-yellow-400 mb-4">Learn More About Us</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Мы создаём инновационные решения, которые помогают бизнесу достигать своих целей в быстро меняющемся мире.
+              We create innovative solutions that help businesses achieve their goals in a rapidly changing world.
             </p>
           </div>
 
@@ -269,18 +269,18 @@ export default function CryptoProcessingPage() {
                 className="rounded-3xl shadow-lg"
               />
               <div className="absolute bottom-4 left-4 bg-yellow-400 text-black px-6 py-4 rounded-lg shadow-lg">
-                <h4 className="text-2xl font-bold">20+ лет опыта</h4>
-                <p className="text-sm">В сфере инновационных решений</p>
+                <h4 className="text-2xl font-bold">20+ Years of Experience</h4>
+                <p className="text-sm">In the field of innovative solutions</p>
               </div>
             </div>
 
             {/* Правая часть: текст и карточки */}
             <div>
               <h3 className="text-3xl font-bold text-white mb-6">
-                Повышение эффективности бизнеса через инновации
+                Enhancing Business Efficiency Through Innovation
               </h3>
               <p className="text-gray-400 text-lg mb-6">
-                Мы фокусируемся на создании стратегий, которые помогают нашим клиентам справляться со сложностями и достигать ощутимых результатов.
+                We focus on creating strategies that help our clients overcome challenges and achieve tangible results.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Карточка 1 */}
