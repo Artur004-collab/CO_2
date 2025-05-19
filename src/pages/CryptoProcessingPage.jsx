@@ -173,10 +173,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-credit-card text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Криптоэквайринг
+                Crypto Acquiring
               </h5>
               <p className="text-gray-400 text-base">
-                Принимайте оплату в BTC, ETH, USDT. Без KYC, через API или Telegram.
+                Accept payments in BTC, ETH, USDT. No KYC, via API or Telegram.
               </p>
             </div>
 
@@ -186,10 +186,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-sync-alt text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Конвертация крипты
+                Crypto Conversion
               </h5>
               <p className="text-gray-400 text-base">
-                Обменивайте активы на фиат с фиксированным курсом в любой момент.
+                Exchange assets to fiat at a fixed rate anytime.
               </p>
             </div>
 
@@ -199,10 +199,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-water text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Поставщики ликвидности
+                Liquidity Providers
               </h5>
               <p className="text-gray-400 text-base">
-                Работаем только с верифицированными платформами: Binance, Kraken, OKX.
+                We work only with verified platforms: Binance, Kraken, OKX.
               </p>
             </div>
 
@@ -212,10 +212,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-handshake text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Партнёрская программа
+                Partnership Program
               </h5>
               <p className="text-gray-400 text-base">
-                Приглашайте клиентов и получайте % от их транзакций.
+                Invite clients and earn a percentage of their transactions.
               </p>
             </div>
 
@@ -225,10 +225,10 @@ export default function CryptoProcessingPage() {
                 <i className="fab fa-telegram text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Telegram-интеграция
+                Telegram Integration
               </h5>
               <p className="text-gray-400 text-base">
-                Все функции доступны через Telegram-бота. Не нужен сайт.
+                All features are available via Telegram bot. No website needed.
               </p>
             </div>
 
@@ -238,10 +238,10 @@ export default function CryptoProcessingPage() {
                 <i className="fas fa-headset text-2xl"></i>
               </div>
               <h5 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-400 transition-colors">
-                Поддержка 24/7
+                24/7 Support
               </h5>
               <p className="text-gray-400 text-base">
-                Наши специалисты доступны в Telegram круглосуточно.
+                Our specialists are available in Telegram around the clock.
               </p>
             </div>
           </div>
