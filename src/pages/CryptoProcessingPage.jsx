@@ -365,26 +365,26 @@ export default function CryptoProcessingPage() {
             <div className="swiper">
               <div className="swiper-wrapper">
                 {/* Отзыв 1 */}
-                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md w-full">
+                <div className="swiper-slide bg-gradient-to-br from-[#111827] to-[#1f2937] rounded-3xl p-8 shadow-lg border border-gray-700 w-full">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★★</span>
                   </div>
-                  <p className="text-sm italic mb-6">
+                  <p className="text-sm italic mb-6 text-gray-300">
                     “With Cryptoopen, we integrated payments in 1 day. Support is 🔥”
                   </p>
-                  <div className="font-semibold">Anna Petrova</div>
+                  <div className="font-semibold text-white">Anna Petrova</div>
                   <div className="text-gray-400 text-sm">CEO Web3 Tech</div>
                 </div>
 
                 {/* Отзыв 2 */}
-                <div className="swiper-slide bg-[#0f2932] rounded-lg p-8 shadow-md w-full">
+                <div className="swiper-slide bg-gradient-to-br from-[#111827] to-[#1f2937] rounded-3xl p-8 shadow-lg border border-gray-700 w-full">
                   <div className="flex items-center mb-4">
                     <span className="text-yellow-400 text-xl">★★★★☆</span>
                   </div>
-                  <p className="text-sm italic mb-6">
+                  <p className="text-sm italic mb-6 text-gray-300">
                     “Very flexible. Telegram bot saved us hours of work.”
                   </p>
-                  <div className="font-semibold">Igor Smirnov</div>
+                  <div className="font-semibold text-white">Igor Smirnov</div>
                   <div className="text-gray-400 text-sm">Product Manager at BitFlow</div>
                 </div>
               </div>
