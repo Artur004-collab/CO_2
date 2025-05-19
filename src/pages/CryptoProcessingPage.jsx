@@ -280,7 +280,7 @@ export default function CryptoProcessingPage() {
           </div>
 
           {/* Основной контент */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Левая часть: изображение */}
             <div className="relative">
               <img
