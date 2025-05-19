@@ -13,6 +13,10 @@ export default function CryptoProcessingPage() {
   const [chatOpen, setChatOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "ru" ? "en" : "ru"));
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1800);
     return () => clearTimeout(timer);
@@ -41,10 +45,6 @@ export default function CryptoProcessingPage() {
     if (newTab !== tab) {
       setTab(newTab);
     }
-  };
-
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "ru" ? "en" : "ru"));
   };
 
   const texts = {
