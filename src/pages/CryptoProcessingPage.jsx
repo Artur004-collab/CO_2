@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 
 export default function CryptoProcessingPage() {
   const [tab, setTab] = useState("accept");
-  const [language, setLanguage] = useState("ru");
+  const [language, setLanguage] = useState("en");
   const [chatOpen, setChatOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
