@@ -628,7 +628,7 @@ export default function CryptoProcessingPage() {
               </div>
               <div className="mt-4">
                 <h6 className="text-yellow-400 text-lg font-semibold flex items-center gap-2">
-                  <img src="https://img.icons8.com/ios-filled/100/ffc107/artificial-intelligence.png" alt="AI Icon" className="h-8 w-8" />
+                  {/*<img src="https://img.icons8.com/ios-filled/100/ffc107/artificial-intelligence.png" alt="AI Icon" className="h-8 w-8" />*/}
                   Crypto Open AI Assistant
                 </h6>
                 <p className="text-gray-400 text-sm mt-2">
