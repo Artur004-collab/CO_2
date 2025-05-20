@@ -610,7 +610,7 @@ export default function CryptoProcessingPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Messengers + AI */}
-            <div className="bg-[#111111] rounded-3xl p-8 shadow-lg border border-gray-700">
+            <div>
               <h5 className="text-2xl font-bold text-white mb-6">Talk to us directly</h5>
               <div className="flex items-center gap-4 mb-4">
                 <img src="https://img.icons8.com/ios-filled/50/ffc107/telegram-app.png" alt="Telegram" className="h-8 w-8" />
@@ -626,7 +626,7 @@ export default function CryptoProcessingPage() {
               </div>
               <div className="mt-8">
                 <h6 className="text-yellow-400 text-lg font-semibold flex items-center gap-2">
-                  <img src="https://img.icons8.com/ios-filled/100/ffc107/artificial-intelligence.png" alt="AI Icon" className="h-6 w-6" />
+                  <img src="https://img.icons8.com/ios-filled/100/ffc107/artificial-intelligence.png" alt="AI Icon" className="h-8 w-8" />
                   AI Assistant
                 </h6>
                 <p className="text-gray-400 text-sm mt-2">
