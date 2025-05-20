@@ -634,7 +634,7 @@ export default function CryptoProcessingPage() {
                 <p className="text-gray-400 text-sm mt-2">
                   Our bot is available 24/7 and ready to help you with crypto-related consultations instantly.
                 </p>
-                <a href="#" className="inline-block mt-4 bg-yellow-400 text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-500 transition">
+                <a href="#" className="inline-block mt-4 bg-yellow-400 text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-400 transition">
                   Start with AI
                 </a>
               </div>
