@@ -612,7 +612,7 @@ export default function CryptoProcessingPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Messengers + AI */}
-            <div className="flex flex-col gap-y-6">
+            <div className="flex flex-col gap-y-6 mt-10">
               <h5 className="text-2xl font-bold text-white">Talk to us directly</h5>
               <div className="flex items-center gap-4">
                 <img src="https://img.icons8.com/ios-filled/50/ffc107/telegram-app.png" alt="Telegram" className="h-8 w-8" />
