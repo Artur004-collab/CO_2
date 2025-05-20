@@ -126,6 +126,7 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Услуги */}
       <section className="py-12 border-b border-gray-800" id="traffic">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
@@ -153,6 +154,7 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Get a Free Consultation */}
       <section className="py-12 bg-black text-white" id="consultation">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-yellow-400 mb-6">Get a Free Consultation</h2>
