@@ -706,6 +706,13 @@ export default function CryptoProcessingPage() {
                     className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                   ></textarea>
                 </div>
+                {/* reCAPTCHA */}
+                <div className="mb-4">
+                  <div className="g-recaptcha" data-sitekey="6LfNYUErAAAAAK3R0CziaIFyQGyy9jT5rx27eMeg"></div>
+                  <noscript>
+                    <div className="text-red-500 mt-2">Please enable JavaScript to use the reCAPTCHA form.</div>
+                  </noscript>
+                </div>
                 <div className="flex items-start">
                   <input
                     type="checkbox"
