@@ -75,7 +75,7 @@ export default function Futer() {
           </div>
 
           {/* Раздел Partnership */}
-          <div></div>
+          <div>
             <h3 className="text-lg font-semibold text-white mb-4">Partnership</h3>
             <ul className="space-y-2">
               <li>
