@@ -239,7 +239,7 @@ export default function CryptoProcessingPage() {
               <i className="fas fa-wallet text-3xl"></i>
             </div>
               <h5 className="text-2xl font-bold text-white mb-4 text-center mt-6">
-                Gateway & Acquiring
+                Gateway & Processing
               </h5>
               <p className="text-gray-400 text-base text-justify">
                 Accept payments on your website in BTC, ETH, USDT and other tokens. Our platform ensures secure and fast transactions, making it easy for businesses to integrate cryptocurrency payments.
