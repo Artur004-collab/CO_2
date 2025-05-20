@@ -45,7 +45,7 @@ export function FormComponent() {
     <div className="bg-gray-900 p-8 rounded-lg shadow-lg border border-gray-800">
       <form action="/send" method="POST" className="space-y-6">
         <div>
-          <label htmlFor="companyName" className="block text-sm font-medium text-yellow-400 mb-2">
+          <label htmlFor="companyName" className="block text-sm font-medium text-gray-400">
             Company Name
           </label>
           <input
@@ -53,11 +53,11 @@ export function FormComponent() {
             id="companyName"
             name="companyName"
             placeholder="Enter your company name"
-            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
         </div>
         <div>
-          <label htmlFor="companyWebsite" className="block text-sm font-medium text-yellow-400 mb-2">
+          <label htmlFor="companyWebsite" className="block text-sm font-medium text-gray-400">
             Website
           </label>
           <input
@@ -65,11 +65,11 @@ export function FormComponent() {
             id="companyWebsite"
             name="companyWebsite"
             placeholder="https://yourcompany.com"
-            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-yellow-400 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-400">
             Email
           </label>
           <input
@@ -77,18 +77,18 @@ export function FormComponent() {
             id="email"
             name="email"
             placeholder="you@example.com"
-            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
         </div>
         <div>
-          <label htmlFor="serviceSelect" className="block text-sm font-medium text-yellow-400 mb-2">
+          <label htmlFor="serviceSelect" className="block text-sm font-medium text-gray-400">
             Select a Service
           </label>
           <select
             id="serviceSelect"
             name="service"
             defaultValue=""
-            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           >
             <option value="" disabled>
               Choose from the list
@@ -100,7 +100,7 @@ export function FormComponent() {
           </select>
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-yellow-400 mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-400">
             Your Request
           </label>
           <textarea
@@ -108,8 +108,15 @@ export function FormComponent() {
             name="message"
             rows="5"
             placeholder="Describe your request or question"
-            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           ></textarea>
+        </div>
+        {/* reCAPTCHA */}
+        <div className="mb-4">
+          <div className="g-recaptcha" data-sitekey="6LfNYUErAAAAAK3R0CziaIFyQGyy9jT5rx27eMeg"></div>
+          <noscript>
+            <div className="text-red-500 mt-2">Please enable JavaScript to use the reCAPTCHA form.</div>
+          </noscript>
         </div>
         <div className="flex items-start">
           <input
@@ -132,7 +139,7 @@ export function FormComponent() {
         <div>
           <button
             type="submit"
-            className="w-full bg-yellow-400 text-black font-bold py-3 rounded-lg hover:bg-yellow-500 transition-transform transform hover:scale-105"
+            className="w-full bg-yellow-400 text-black font-bold py-3 rounded-lg hover:bg-yellow-500 transition"
           >
             Send Request
           </button>
