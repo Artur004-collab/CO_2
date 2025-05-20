@@ -102,7 +102,7 @@ export default function Futer() {
         </div>
 
         {/* Социальные сети */}
-        <div className="flex space-x-8 mb-4">
+        <div className="flex space-x-8 mb-10">
           <a
             href="#"
             className="text-gray-400 hover:text-yellow-400 transition-colors text-4xl"
