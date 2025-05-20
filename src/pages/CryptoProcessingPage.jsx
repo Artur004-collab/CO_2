@@ -618,7 +618,7 @@ export default function CryptoProcessingPage() {
                 <img src="https://img.icons8.com/ios-filled/50/ffc107/telegram-app.png" alt="Telegram" className="h-8 w-8" />
                 <a
                   href="https://t.me/YourTelegram"
-                  className="text-yellow-400 text-lg font-semibold transition-all duration-300"
+                  className="text-grey-400 text-lg font-semibold transition-all duration-300"
                   style={{ fontSize: "1rem" }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.fontSize = "1.125rem"; // Увеличение шрифта
@@ -635,7 +635,7 @@ export default function CryptoProcessingPage() {
                 <img src="https://img.icons8.com/ios-filled/50/ffc107/whatsapp.png" alt="WhatsApp" className="h-8 w-8" />
                 <a
                   href="https://wa.me/123456789"
-                  className="text-yellow-400 text-lg font-semibold transition-all duration-300"
+                  className="text-grey-400 text-lg font-semibold transition-all duration-300"
                   style={{ fontSize: "1rem" }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.fontSize = "1.125rem"; // Увеличение шрифта
