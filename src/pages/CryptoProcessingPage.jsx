@@ -391,6 +391,98 @@ export default function CryptoProcessingPage() {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-24 bg-black text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="flex flex-col lg:flex-row items-start">
+            <div className="lg:w-1/2 mb-8">
+              <h2 className="text-4xl font-extrabold text-yellow-400 mb-4">Fast. Simple. Secure.</h2>
+              <p className="text-lg text-gray-400">
+                At CryptoOpen, we don't just deliver services — we deliver outcomes. Our process is built for speed, clarity, and confidence. Whether you're launching or scaling, we keep it seamless and secure — so you stay focused on results.
+              </p>
+            </div>
+            <div className="lg:w-1/2 relative step-line">
+              <div className="step-wrapper">
+                <div className="step-icon">
+                  <img src="https://img.icons8.com/ios-filled/50/ffc107/telegram-app.png" alt="Submit Icon" className="h-7 w-7" />
+                </div>
+                <h5 className="text-xl font-bold text-white">Submit Request</h5>
+                <p className="text-gray-400">Client sends us their needs via Telegram or form</p>
+              </div>
+
+              <div className="step-wrapper">
+                <div className="step-icon">
+                  <img src="https://img.icons8.com/ios-filled/50/ffc107/task.png" alt="Clarify Icon" className="h-7 w-7" />
+                </div>
+                <h5 className="text-xl font-bold text-white">Clarify Details</h5>
+                <p className="text-gray-400">We analyze and confirm requirements</p>
+              </div>
+
+              <div className="step-wrapper">
+                <div className="step-icon">
+                  <img src="https://img.icons8.com/ios-filled/50/ffc107/maintenance.png" alt="Execution Icon" className="h-7 w-7" />
+                </div>
+                <h5 className="text-xl font-bold text-white">Execution</h5>
+                <p className="text-gray-400">We implement solution or transaction</p>
+              </div>
+
+              <div className="step-wrapper">
+                <div className="step-icon">
+                  <img src="https://img.icons8.com/ios-filled/50/ffc107/chat.png" alt="Support Icon" className="h-7 w-7" />
+                </div>
+                <h5 className="text-xl font-bold text-white">Ongoing Support</h5>
+                <p className="text-gray-400">Client receives updates, support & reports</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style jsx>{`
+          .step-wrapper {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+          }
+          .step-wrapper:nth-of-type(1) { animation-delay: 0.2s; }
+          .step-wrapper:nth-of-type(2) { animation-delay: 0.4s; }
+          .step-wrapper:nth-of-type(3) { animation-delay: 0.6s; }
+          .step-wrapper:nth-of-type(4) { animation-delay: 0.8s; }
+
+          @keyframes fadeInUp {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .step-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background: #111;
+            border: 2px solid #ffc107;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .step-line::before {
+            content: '';
+            position: absolute;
+            left: 29px;
+            top: 70px;
+            width: 2px;
+            height: calc(100% - 60px);
+            background-color: #444;
+          }
+        `}</style>
+      </section>
+
       {/* Отзывной блок */}
       <section className="bg-black text-white py-16">
         <div className="max-w-6xl mx-auto px-4">
