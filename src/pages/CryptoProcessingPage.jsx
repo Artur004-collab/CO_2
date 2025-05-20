@@ -517,7 +517,7 @@ export default function CryptoProcessingPage() {
                 At CryptoOpen, we don't just deliver services — we deliver outcomes. Our process is built for speed, clarity, and confidence. Whether you're launching or scaling, we keep it seamless and secure — so you stay focused on results.
               </p>
             </div>
-            <div className="lg:w-1/2 relative step-line ml-7">
+            <div className="lg:w-1/2 relative step-line ml-12">
               <div className="step-wrapper">
                 <div className="step-icon">
                   <img src="https://img.icons8.com/ios-filled/50/ffc107/telegram-app.png" alt="Submit Icon" className="h-7 w-7" />
