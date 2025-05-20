@@ -1,3 +1,5 @@
+import Futer from "../components/Futer";
+
 export default function Services() {
   return (
     <div className="bg-black text-white">
