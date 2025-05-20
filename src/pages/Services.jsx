@@ -72,7 +72,86 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Add more sections as needed */}
+      <section className="py-12 border-b border-gray-800" id="otc">
+        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <div className="text-yellow-400 text-4xl mb-4">
+              <i className="bi bi-currency-exchange"></i>
+            </div>
+            <h2 className="text-2xl font-bold text-white">OTC deals and Liquidity</h2>
+            <p className="text-gray-400 mt-4">
+              Our OTC desk facilitates high-volume trades for institutional and HNW clients. We offer competitive pricing, privacy, and personalized execution strategies through regulated counterparties.
+            </p>
+            <p className="text-gray-400 mt-2">
+              Direct crypto-fiat swaps, bulk USDT settlements, and escrowed BTC deals — tailored to the client's operational flow.
+            </p>
+          </div>
+          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+            <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
+            <ul className="list-disc list-inside text-gray-400 space-y-2">
+              <li>Access to deep liquidity</li>
+              <li>Fixed-rate execution and low spreads</li>
+              <li>Escrow, KYC, and settlement guarantee</li>
+              <li>EUR, USD, GBP, AED pair support</li>
+              <li>Confidentiality and VIP desk support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 border-b border-gray-800" id="licences">
+        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <div className="text-yellow-400 text-4xl mb-4">
+              <i className="bi bi-building"></i>
+            </div>
+            <h2 className="text-2xl font-bold text-white">Company and Licences</h2>
+            <p className="text-gray-400 mt-4">
+              We guide crypto startups and fintech projects through company formation, regulatory compliance, and licensing procedures in top jurisdictions.
+            </p>
+            <p className="text-gray-400 mt-2">
+              Jurisdictions covered: Lithuania, Estonia, Dubai, Seychelles, BVI and others. We help you navigate structure choice, legal opinions, and post-registration support.
+            </p>
+          </div>
+          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+            <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
+            <ul className="list-disc list-inside text-gray-400 space-y-2">
+              <li>Company registration with nominee support</li>
+              <li>Crypto license preparation and filing</li>
+              <li>Local legal and accounting partners</li>
+              <li>Banking and PSP connections</li>
+              <li>White-label documentation (ToS, Privacy, KYC)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 border-b border-gray-800" id="traffic">
+        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <div className="text-yellow-400 text-4xl mb-4">
+              <i className="bi bi-megaphone"></i>
+            </div>
+            <h2 className="text-2xl font-bold text-white">Traffic and Clients</h2>
+            <p className="text-gray-400 mt-4">
+              We attract real users, crypto traffic, and investors through our performance marketing network and affiliate systems. Whether you need Web3 users, traders, or conversion-ready leads — we structure inbound flow around results.
+            </p>
+            <p className="text-gray-400 mt-2">
+              Our ecosystem includes crypto influencers, paid media, SEO, content marketing, and integration with token communities and launchpads.
+            </p>
+          </div>
+          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+            <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
+            <ul className="list-disc list-inside text-gray-400 space-y-2">
+              <li>Verified crypto user traffic (global + GEO targeting)</li>
+              <li>Affiliate acquisition with dashboard access</li>
+              <li>Search visibility (SEO/SEM)</li>
+              <li>Influencer campaigns & growth hacking</li>
+              <li>Lead gen for token sales or B2B deals</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <Futer />
