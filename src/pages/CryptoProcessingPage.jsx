@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 export default function CryptoProcessingPage() {
   const [tab, setTab] = useState("accept");
   const [language, setLanguage] = useState("en");
