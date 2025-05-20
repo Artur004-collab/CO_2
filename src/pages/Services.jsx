@@ -73,10 +73,7 @@ export default function Services() {
       {/* Add more sections as needed */}
 
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 text-center">
-        <p className="text-gray-400">© 2025 CryptoOpen. All rights reserved.</p>
-        <p className="text-gray-500 mt-2">support@cryptoopen.io | Telegram: @CryptoOpenSupport</p>
-      </footer>
+      <Futer />
     </div>
   );
 }
