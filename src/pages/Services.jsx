@@ -1,5 +1,5 @@
 import Futer from "../components/Futer";
-import ConsultationBlock from "../components/ConsultationBlock";
+import FormComponent from "../components/FormComponent";
 
 export default function Services() {
   return (
@@ -156,7 +156,7 @@ export default function Services() {
       </section>
 
       {/* Get a Free Consultation */}
-      <ConsultationBlock />
+      <FormComponent />
 
       {/* Footer */}
       <Futer />
