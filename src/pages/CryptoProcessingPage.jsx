@@ -685,9 +685,10 @@ export default function CryptoProcessingPage() {
                   <select
                     id="serviceSelect"
                     name="service"
+                    defaultValue=""
                     className="w-full bg-[#111] border border-gray-700 text-white rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                   >
-                    <option value="" disabled selected>
+                    <option value="" disabled>
                       Choose from the list
                     </option>
                     <option value="otc">OTC Deals & Liquidity</option>
