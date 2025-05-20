@@ -603,15 +603,15 @@ export default function CryptoProcessingPage() {
 
       {/* FAQ Section */}
       <section className="py-24 bg-black text-white">
-        <div className="max-w-5xl mx-auto px-6 md:px-12"> {/* Увеличена ширина */}
+        <div className="max-w-6xl mx-auto px-6 md:px-12"> {/* Ещё больше увеличена ширина */}
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-yellow-400 mb-4">Frequently Asked Questions</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
               Everything you need to know about CryptoOpen — clearly explained and always up to date.
             </p>
           </div>
 
-          <div className="faq-block flex flex-col gap-4 max-w-4xl mx-auto"> {/* Уменьшено расстояние между вопросами */}
+          <div className="faq-block flex flex-col gap-4 max-w-5xl mx-auto"> {/* Увеличена ширина блока вопросов */}
             {/* FAQ Card 1 */}
             <div className="faq-card bg-[#0a0a0a] border border-gray-700 rounded-3xl p-6 transition-shadow hover:shadow-lg">
               <button
