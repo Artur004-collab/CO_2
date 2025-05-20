@@ -878,7 +878,7 @@ export default function CryptoProcessingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-6 text-center text-gray-400">
+      <footer className="bg-black py-6 text-center text-gray-400 border border-red-500">
         <p>{texts.privacy}</p>
       </footer>
 
