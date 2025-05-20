@@ -601,6 +601,105 @@ export default function CryptoProcessingPage() {
         `}</style>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-24 bg-black text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-yellow-400 mb-4">Frequently Asked Questions</h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Everything you need to know about CryptoOpen — clearly explained and always up to date.
+            </p>
+          </div>
+
+          <div className="faq-block flex flex-col gap-6 max-w-3xl mx-auto">
+            {/* FAQ Card 1 */}
+            <div className="faq-card bg-[#0a0a0a] border border-gray-700 rounded-3xl p-6 transition-shadow hover:shadow-lg">
+              <button
+                className="faq-question w-full text-left text-lg font-semibold text-white flex justify-between items-center"
+                onClick={(e) => {
+                  const card = e.currentTarget.closest(".faq-card");
+                  card.classList.toggle("active");
+                }}
+              >
+                What is CryptoOpen?
+                <span className="icon bg-yellow-400 text-black rounded-full w-7 h-7 flex items-center justify-center font-bold transition-transform">
+                  +
+                </span>
+              </button>
+              <div className="faq-answer mt-4 text-gray-400 text-sm hidden">
+                CryptoOpen is a secure and scalable crypto gateway and OTC solution provider offering tailored services for Web3 businesses, including acquiring, licensing, and liquidity solutions.
+              </div>
+            </div>
+
+            {/* FAQ Card 2 */}
+            <div className="faq-card bg-[#0a0a0a] border border-gray-700 rounded-3xl p-6 transition-shadow hover:shadow-lg">
+              <button
+                className="faq-question w-full text-left text-lg font-semibold text-white flex justify-between items-center"
+                onClick={(e) => {
+                  const card = e.currentTarget.closest(".faq-card");
+                  card.classList.toggle("active");
+                }}
+              >
+                How long does onboarding take?
+                <span className="icon bg-yellow-400 text-black rounded-full w-7 h-7 flex items-center justify-center font-bold transition-transform">
+                  +
+                </span>
+              </button>
+              <div className="faq-answer mt-4 text-gray-400 text-sm hidden">
+                Onboarding typically takes 24–48 hours, depending on compliance review. You will be guided by a personal manager at every step.
+              </div>
+            </div>
+
+            {/* FAQ Card 3 */}
+            <div className="faq-card bg-[#0a0a0a] border border-gray-700 rounded-3xl p-6 transition-shadow hover:shadow-lg">
+              <button
+                className="faq-question w-full text-left text-lg font-semibold text-white flex justify-between items-center"
+                onClick={(e) => {
+                  const card = e.currentTarget.closest(".faq-card");
+                  card.classList.toggle("active");
+                }}
+              >
+                Do I need a license to start?
+                <span className="icon bg-yellow-400 text-black rounded-full w-7 h-7 flex items-center justify-center font-bold transition-transform">
+                  +
+                </span>
+              </button>
+              <div className="faq-answer mt-4 text-gray-400 text-sm hidden">
+                Not necessarily. We offer models that do not require immediate licensing, and help you scale into compliant frameworks if needed.
+              </div>
+            </div>
+
+            {/* FAQ Card 4 */}
+            <div className="faq-card bg-[#0a0a0a] border border-gray-700 rounded-3xl p-6 transition-shadow hover:shadow-lg">
+              <button
+                className="faq-question w-full text-left text-lg font-semibold text-white flex justify-between items-center"
+                onClick={(e) => {
+                  const card = e.currentTarget.closest(".faq-card");
+                  card.classList.toggle("active");
+                }}
+              >
+                Can I try CryptoOpen before committing?
+                <span className="icon bg-yellow-400 text-black rounded-full w-7 h-7 flex items-center justify-center font-bold transition-transform">
+                  +
+                </span>
+              </button>
+              <div className="faq-answer mt-4 text-gray-400 text-sm hidden">
+                Yes. You can start with a single OTC transaction or test our acquiring API before full integration.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style jsx>{`
+        .faq-card.active .faq-answer {
+          display: block;
+        }
+        .faq-card.active .icon {
+          transform: rotate(45deg);
+        }
+      `}</style>
+
       {/* Contact Section */}
       <section className="py-24 bg-black text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
