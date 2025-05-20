@@ -102,31 +102,31 @@ export default function Futer() {
         </div>
 
         {/* Социальные сети */}
-        <div className="flex justify-center space-x-6 mb-12">
+        <div className="flex justify-center space-x-10 mb-16">
           <a
             href="#"
-            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-4xl"
             aria-label="LinkedIn"
           >
             <i className="fab fa-linkedin-in"></i>
           </a>
           <a
             href="#"
-            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-4xl"
             aria-label="Telegram"
           >
             <i className="fab fa-telegram-plane"></i>
           </a>
           <a
             href="#"
-            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-4xl"
             aria-label="Instagram"
           >
             <i className="fab fa-instagram"></i>
           </a>
           <a
             href="#"
-            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-4xl"
             aria-label="Facebook"
           >
             <i className="fab fa-facebook-f"></i>
