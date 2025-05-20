@@ -2,43 +2,16 @@ export default function Futer() {
   return (
     <footer className="bg-black py-10 text-gray-400">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Верхняя часть футера */}
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-yellow-400">CryptoOpen</h2>
-          <div className="flex space-x-6">
-            <a
-              href="#"
-              className="text-gray-400 hover:text-yellow-400 transition-colors text-xl"
-              aria-label="LinkedIn"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-yellow-400 transition-colors text-xl"
-              aria-label="Telegram"
-            >
-              <i className="fab fa-telegram-plane"></i>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-yellow-400 transition-colors text-xl"
-              aria-label="Instagram"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-yellow-400 transition-colors text-xl"
-              aria-label="Facebook"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
-          </div>
+        {/* Логотип и описание */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-yellow-400">CryptoOpen</h2>
+          <p className="text-sm mt-2 max-w-md mx-auto">
+            We don't just understand the crypto business — we are part of it. Your trusted partner in navigating the world of cryptocurrencies.
+          </p>
         </div>
 
         {/* Средняя часть футера */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 border-b border-gray-700 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left mb-8">
           {/* Раздел Documents */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Documents</h3>
@@ -125,10 +98,45 @@ export default function Futer() {
           </div>
         </div>
 
+        {/* Социальные сети */}
+        <div className="flex justify-center space-x-6 mb-8">
+          <a
+            href="#"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            aria-label="LinkedIn"
+          >
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="#"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            aria-label="Telegram"
+          >
+            <i className="fab fa-telegram-plane"></i>
+          </a>
+          <a
+            href="#"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            aria-label="Instagram"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            className="text-gray-400 hover:text-yellow-400 transition-colors text-2xl"
+            aria-label="Facebook"
+          >
+            <i className="fab fa-facebook-f"></i>
+          </a>
+        </div>
+
         {/* Нижняя часть футера */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-6">
-          <p className="text-sm text-center md:text-left">
-            © {new Date().getFullYear()} CryptoOpen. All rights reserved.
+        <div className="text-center border-t border-gray-700 pt-6">
+          <p className="text-sm">
+            © 2025 CryptoOpen. All rights reserved.
+          </p>
+          <p className="text-xs mt-2 text-gray-500">
+            Disclaimer: Cryptocurrency investments involve significant risk. Please consult with a financial advisor before making any decisions.
           </p>
         </div>
       </div>
