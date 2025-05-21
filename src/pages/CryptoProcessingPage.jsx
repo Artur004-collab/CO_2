@@ -201,7 +201,7 @@ export default function CryptoProcessingPage() {
           }
           .content {
             position: relative;
-            z-index: 1;
+            z-index: 999;
             display: flex;
             flex-direction: column;
             align-items: center;
