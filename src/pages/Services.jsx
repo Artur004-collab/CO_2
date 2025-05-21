@@ -1,9 +1,11 @@
+import Navbar from "../components/Navbar";
 import Futer from "../components/Futer";
 import IdenticalForm from "../components/IdenticalForm";
 
 export default function Services() {
   return (
     <div className="bg-black text-white">
+      <Navbar /> 
       {/* Hero Section */}
       <section className="text-center py-12 bg-black">
         <div className="container mx-auto px-6">
