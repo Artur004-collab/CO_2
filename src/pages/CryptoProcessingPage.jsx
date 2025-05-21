@@ -591,7 +591,7 @@ export default function CryptoProcessingPage() {
             justify-content: center;
           }
 
-          .step-line::before {
+          {/*.step-line::before {
             content: '';
             position: absolute;
             left: 29px;
@@ -599,7 +599,7 @@ export default function CryptoProcessingPage() {
             width: 2px;
             height: calc(100% - 60px);
             background-color: #444;
-          }
+          } */}
         `}</style>
       </section>
 
