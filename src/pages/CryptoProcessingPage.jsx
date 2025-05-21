@@ -260,7 +260,7 @@ export default function CryptoProcessingPage() {
         </div>
 
         {/* Карусель логотипов */}
-        <div className="logo-carousel-wrapper mt-20 w-full overflow-hidden" mb-4>
+        <div className="logo-carousel-wrapper mt-20 w-full overflow-hidden mb-4">
           <div className="logo-carousel-track flex space-x-8 animate-marquee">
             {/* Логотипы токенов с CoinMarketCap */}
             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="Bitcoin" className="h-12 w-auto" />
