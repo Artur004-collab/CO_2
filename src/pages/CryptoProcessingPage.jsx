@@ -310,6 +310,9 @@ export default function CryptoProcessingPage() {
           <p className="text-lg text-gray-400 font-thick">
             Over 100+ Popular Crypto currencies and tokens supported
           </p>
+          <p className="text-lg text-gray-400 font-thick">
+            Over 100+ Popular Crypto currencies and tokens supported
+          </p>
         </div>
 
         {/* CSS для карусели */}
