@@ -127,25 +127,90 @@ export default function CryptoProcessingPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col items-center justify-center px-6 text-center fade-in bg-black">
-        <h1 className="text-5xl font-extrabold text-yellow-400 mb-6">
-          {texts.title}
-        </h1>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
-          {texts.description}
-        </p>
-        <button className="bg-yellow-400 text-black font-bold px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
-          {texts.startIntegration}
-        </button>
-        <div
-          onClick={scrollToServices}
-          className="mt-6 flex items-center justify-center text-sm text-gray-400 hover:text-yellow-400 cursor-pointer"
-        >
-          <span className="mr-2">{texts.learnMore}</span>
-          <ArrowRight size={16} />
+      <section className="hero fade-in">
+        <div className="content">
+          <h1 className="text-5xl font-extrabold text-yellow-400 mb-6">
+            {texts.title}
+          </h1>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+            {texts.description}
+          </p>
+          <button className="bg-yellow-400 text-black font-bold px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+            {texts.startIntegration}
+          </button>
+          <div
+            onClick={scrollToServices}
+            className="mt-6 flex items-center justify-center text-sm text-gray-400 hover:text-yellow-400 cursor-pointer"
+          >
+            <span className="mr-2">{texts.learnMore}</span>
+            <ArrowRight size={16} />
+          </div>
         </div>
-
         <style jsx>{`
+          /* Фоновая анимация с использованием кастомных свойств */
+          :root {
+            --stripe-color: #fff;
+          }
+          .hero {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            /* Определяем два фоновых слоя */
+            --stripes: repeating-linear-gradient(
+              100deg,
+              var(--stripe-color) 0%,
+              var(--stripe-color) 7%,
+              transparent 10%,
+              transparent 12%,
+              var(--stripe-color) 16%
+            );
+            --rainbow: repeating-linear-gradient(
+              100deg,
+              #60a5fa 10%,
+              #e879f9 15%,
+              #60a5fa 20%,
+              #5eead4 25%,
+              #60a5fa 30%
+            );
+            background-image: var(--stripes), var(--rainbow);
+            background-size: 300%, 200%;
+            background-position: 50% 50%, 50% 50%;
+            filter: blur(10px) invert(100%);
+            mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
+          }
+          .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: var(--stripes), var(--rainbow);
+            background-size: 200%, 100%;
+            animation: smoothBg 60s linear infinite;
+            background-attachment: fixed;
+            mix-blend-mode: difference;
+          }
+          @keyframes smoothBg {
+            from {
+              background-position: 50% 50%, 50% 50%;
+            }
+            to {
+              background-position: 350% 50%, 350% 50%;
+            }
+          }
+          .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+            mix-blend-mode: difference;
+            filter: invert(1);
+          }
           @keyframes fadeIn {
             0% {
               opacity: 0;
