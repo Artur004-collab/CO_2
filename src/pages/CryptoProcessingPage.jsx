@@ -189,7 +189,7 @@ export default function CryptoProcessingPage() {
             animation: smoothBg 60s linear infinite;
             background-attachment: fixed;
             mix-blend-mode: difference;
-            z-index: -999;
+            z-index: -1;
           }
           @keyframes smoothBg {
             from {
@@ -212,7 +212,7 @@ export default function CryptoProcessingPage() {
           }
           @keyframes fadeIn {
             0% {
-              opacity: 0;
+              opacity: 100;
               transform: translateY(20px);
             }
             100% {
