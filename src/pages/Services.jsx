@@ -13,12 +13,12 @@ export default function Services() {
           <p className="text-lg text-gray-400 mt-4">
             Explore our offerings in a clear, client-oriented structure.
           </p>
-          <a
+          {/*<a
             href="/"
             className="inline-block mt-6 px-6 py-3 border border-yellow-400 text-yellow-400 rounded-lg hover:bg-yellow-400 hover:text-black transition"
           >
             ← Back to Homepage
-          </a>
+          </a>*/}
         </div>
       </section>
 
