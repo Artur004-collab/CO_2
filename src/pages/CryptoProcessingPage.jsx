@@ -145,6 +145,83 @@ export default function CryptoProcessingPage() {
           <ArrowRight size={16} />
         </div>
 
+        {/* Карусель логотипов */}
+        <div className="logo-carousel-wrapper mt-20 w-full overflow-hidden">
+          <div className="logo-carousel-track flex space-x-8 animate-marquee">
+            {/* Логотипы токенов с CoinMarketCap */}
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="Bitcoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="Ethereum" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="Tether" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt="Binance" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt="Solana" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt="Cardano" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6636.png" alt="Polkadot" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt="Dogecoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt="Tron" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="XRP" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png" alt="Litecoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png" alt="Avalanche" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png" alt="Chainlink" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Shiba Inu" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/512.png" alt="Stellar" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/328.png" alt="Monero" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png" alt="VeChain" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2011.png" alt="Tezos" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png" alt="Cosmos" className="h-12 w-auto" />
+            {/* Дублирование для зацикливания */}
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="Bitcoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="Ethereum" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="Tether" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt="Binance" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt="Solana" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt="Cardano" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6636.png" alt="Polkadot" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt="Dogecoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt="Tron" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="XRP" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png" alt="Litecoin" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png" alt="Avalanche" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png" alt="Chainlink" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Shiba Inu" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/512.png" alt="Stellar" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/328.png" alt="Monero" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png" alt="VeChain" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2011.png" alt="Tezos" className="h-12 w-auto" />
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png" alt="Cosmos" className="h-12 w-auto" />
+          </div>
+        </div>
+
+        {/* Надпись под каруселью */}
+        <div className="text-center mt-8">
+          <p className="text-lg text-gray-400 font-thick">
+            Over 100+ Popular Crypto currencies and tokens supported
+          </p>
+        </div>
+
+        {/* CSS для карусели */}
+        <style jsx>{`
+          .logo-carousel-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+          }
+
+          .logo-carousel-track {
+            display: flex;
+            animation: marquee 20s linear infinite;
+          }
+
+          @keyframes marquee {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+        `}</style>
+      </section>
+
       {/* Second Block */}
       <section id="services" className="py-24 bg-black text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -257,83 +334,6 @@ export default function CryptoProcessingPage() {
             </Link>
           </div>
         </div>
-      </section>
-
-              {/* Карусель логотипов */}
-        <div className="logo-carousel-wrapper mt-20 w-full overflow-hidden">
-          <div className="logo-carousel-track flex space-x-8 animate-marquee">
-            {/* Логотипы токенов с CoinMarketCap */}
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="Bitcoin" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="Ethereum" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="Tether" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt="Binance" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt="Solana" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt="Cardano" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6636.png" alt="Polkadot" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt="Dogecoin" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt="Tron" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="XRP" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png" alt="Litecoin" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png" alt="Avalanche" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png" alt="Chainlink" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Shiba Inu" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/512.png" alt="Stellar" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/328.png" alt="Monero" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png" alt="VeChain" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2011.png" alt="Tezos" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png" alt="Cosmos" className="h-12 w-auto" />
-            {/* Дублирование для зацикливания */}
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="Bitcoin" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="Ethereum" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="Tether" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt="Binance" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt="Solana" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt="Cardano" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6636.png" alt="Polkadot" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt="Dogecoin" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt="Tron" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="XRP" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png" alt="Litecoin" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png" alt="Avalanche" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png" alt="Chainlink" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Shiba Inu" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/512.png" alt="Stellar" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/328.png" alt="Monero" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png" alt="VeChain" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2011.png" alt="Tezos" className="h-12 w-auto" />
-            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png" alt="Cosmos" className="h-12 w-auto" />
-          </div>
-        </div>
-
-        {/* Надпись под каруселью */}
-        <div className="text-center mt-8">
-          <p className="text-lg text-gray-400 font-thick">
-            Over 100+ Popular Crypto currencies and tokens supported
-          </p>
-        </div>
-
-        {/* CSS для карусели */}
-        <style jsx>{`
-          .logo-carousel-wrapper {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-          }
-
-          .logo-carousel-track {
-            display: flex;
-            animation: marquee 20s linear infinite;
-          }
-
-          @keyframes marquee {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-        `}</style>
       </section>
 
       {/* Third Block */}
