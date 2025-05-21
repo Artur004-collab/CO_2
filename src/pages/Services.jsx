@@ -9,7 +9,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="text-center py-12 bg-black">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-yellow-400">CryptoOpen Services</h1>
+          <h1 className="text-4xl font-bold text-yellow-400">Crypto Open Services</h1>
           <p className="text-lg text-gray-400 mt-4">
             Explore our offerings in a clear, client-oriented structure.
           </p>
