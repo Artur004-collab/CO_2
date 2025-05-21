@@ -437,9 +437,9 @@ export default function CryptoProcessingPage() {
                 src="/images/1.jpg" // Пример изображения
                 alt="About Us"
                 className="rounded-3xl shadow-lg w-full max-w-md mx-auto" // Ограничение ширины
-                style={{ filter: "brightness(80%)" }} // Затемнение на 20%
+                style={{ filter: "brightness(100%)" }} // Затемнение на 20%
               />
-              <div className="absolute bottom-4 right-4 bg-yellow-600 text-black px-6 py-4 rounded-lg shadow-lg">
+              <div className="absolute bottom-4 right-4 bg-yellow-400 text-black px-6 py-4 rounded-lg shadow-lg">
                 <h4 className="text-2xl font-bold">15+ Years of Experience</h4>
                 <p className="text-sm">In the field of Business & Payments solutions</p>
               </div>
