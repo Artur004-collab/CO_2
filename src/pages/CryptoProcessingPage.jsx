@@ -495,7 +495,7 @@ export default function CryptoProcessingPage() {
               <div className="mb-3 text-yellow-400 text-4xl transition-transform duration-300 hover:scale-110">
                 <i className="fas fa-globe"></i> {/* Font Awesome Globe Icon */}
               </div>
-              <h5 className="text-xl font-bold text-white mb-2">International Standards</h5>
+              <h5 className="text-xl font-bold text-white mb-2">Global Standards</h5>
               <p className="text-gray-400 text-sm">
                 Operating in accordance with EU laws and global FATF recommendations.
               </p>
