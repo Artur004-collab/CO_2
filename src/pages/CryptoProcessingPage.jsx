@@ -127,7 +127,7 @@ export default function CryptoProcessingPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col items-center justify-center px-6 text-center bg-black">
+      <section className="h-screen flex flex-col items-center justify-center px-6 text-center bg-black fade-in">
         <h1 className="text-5xl font-extrabold text-yellow-400 mb-6">
           {texts.title}
         </h1>
@@ -144,6 +144,22 @@ export default function CryptoProcessingPage() {
           <span className="mr-2">{texts.learnMore}</span>
           <ArrowRight size={16} />
         </div>
+
+        <style jsx>{`
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+          }
+        `}</style>
       </section>
 
       {/* Second Block */}
