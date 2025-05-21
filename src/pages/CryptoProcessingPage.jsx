@@ -132,7 +132,7 @@ export default function CryptoProcessingPage() {
           <h1 className="text-8xl font-extrabold text-yellow-400 mb-6">
             {texts.title}
           </h1>
-          <p className="text-2xl text-black max-w-2xl mx-auto mb-8">
+          <p className="text-1xl text-black font-semibold max-w-2xl mx-auto mb-8">
             {texts.description}
           </p>
           <button className="bg-yellow-400 text-black font-bold px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
