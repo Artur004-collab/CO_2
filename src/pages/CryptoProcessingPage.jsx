@@ -129,7 +129,7 @@ export default function CryptoProcessingPage() {
       {/* Hero Section */}
       <section className="hero fade-in">
         <div className="content">
-          <h1 className="text-5xl font-extrabold text-black-400 mb-6">
+          <h1 className="text-7xl font-extrabold text-black-600 mb-6">
             {texts.title}
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
