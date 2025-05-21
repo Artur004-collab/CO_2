@@ -127,7 +127,7 @@ export default function CryptoProcessingPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col items-center justify-center px-6 text-center hero-bg fade-in">
+      <section className="h-screen flex flex-col items-center justify-center px-6 text-center fade-in">
         <h1 className="text-5xl font-extrabold text-yellow-400 mb-6">
           {texts.title}
         </h1>
