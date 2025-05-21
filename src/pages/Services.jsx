@@ -89,7 +89,7 @@ export default function Services() {
               Direct crypto-fiat swaps, bulk USDT settlements, and escrowed BTC deals — tailored to the client's operational flow.
             </p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="p-6 rounded-lg border border-gray-800">
             <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
             <ul className="list-disc list-inside text-gray-400 space-y-2">
               <li>Access to deep liquidity</li>
@@ -116,7 +116,7 @@ export default function Services() {
               Jurisdictions covered: Lithuania, Estonia, Dubai, Seychelles, BVI and others. We help you navigate structure choice, legal opinions, and post-registration support.
             </p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="p-6 rounded-lg border border-gray-800">
             <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
             <ul className="list-disc list-inside text-gray-400 space-y-2">
               <li>Company registration with nominee support</li>
@@ -144,7 +144,7 @@ export default function Services() {
               Our ecosystem includes crypto influencers, paid media, SEO, content marketing, and integration with token communities and launchpads.
             </p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="p-6 rounded-lg border border-gray-800">
             <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
             <ul className="list-disc list-inside text-gray-400 space-y-2">
               <li>Verified crypto user traffic (global + GEO targeting)</li>
