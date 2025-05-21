@@ -127,7 +127,7 @@ export default function CryptoProcessingPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col items-center justify-center px-6 text-center fade-in">
+      <section className="h-screen flex flex-col items-center justify-center px-6 text-center fade-in bg-black">
         <h1 className="text-5xl font-extrabold text-yellow-400 mb-6">
           {texts.title}
         </h1>
@@ -158,22 +158,6 @@ export default function CryptoProcessingPage() {
           }
           .fade-in {
             animation: fadeIn 1s ease-out forwards;
-          }
-          @keyframes gradientAnimation {
-            0% {
-              background-position: 0% 50%;
-            }
-            50% {
-              background-position: 100% 50%;
-            }
-            100% {
-              background-position: 0% 50%;
-            }
-          }
-          .hero-bg {
-            background: linear-gradient(45deg, #000000, #1a1a1a, #333333);
-            background-size: 400% 400%;
-            animation: gradientAnimation 15s ease infinite;
           }
         `}</style>
       </section>
