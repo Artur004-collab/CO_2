@@ -150,79 +150,78 @@ export default function CryptoProcessingPage() {
           :root {
             --stripe-color: #fff;
           }
-          .hero {
-            width: 100%;
-            height: 100%;
-            min-height: 100vh;
-            position: relative;
-            display: flex;
-            place-content: center;
-            place-items: center;
-            --stripes: repeating-linear-gradient(
-              100deg,
-              var(--stripe-color) 0%,
-              var(--stripe-color) 7%,
-              transparent 10%,
-              transparent 12%,
-              var(--stripe-color) 16%
-            );
-            --rainbow: repeating-linear-gradient(
-              100deg,
-              #60a5fa 10%,
-              #e879f9 15%,
-              #60a5fa 20%,
-              #5eead4 25%,
-              #60a5fa 30%
-            );
-            background-image: var(--stripes), var(--rainbow);
-            background-size: 300%, 200%;
-            background-position: 50% 50%, 50% 50%;
-            filter: blur(10px) invert(100%);
-            mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
-          }
-          .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-image: var(--stripes), var(--rainbow);
-            background-size: 200%, 100%;
-            animation: smoothBg 60s linear infinite;
-            background-attachment: fixed;
-            mix-blend-mode: difference;
-            z-index: -3;
-          }
-          @keyframes smoothBg {
-            from {
-              background-position: 50% 50%, 50% 50%;
-            }
-            to {
-              background-position: 350% 50%, 350% 50%;
-            }
-          }
-          .content {
-            position: relative;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            text-align: center;
-            mix-blend-mode: difference;
-            filter: invert(1);
-          }
-          @keyframes fadeIn {
-            0% {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-          .fade-in {
-            animation: fadeIn 1s ease-out forwards;
-          }
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      100deg,
+      #fff 0%,
+      #fff 7%,
+      transparent 10%,
+      transparent 12%,
+      #fff 16%
+    ),
+    repeating-linear-gradient(
+      100deg,
+      #60a5fa 10%,
+      #e879f9 15%,
+      #60a5fa 20%,
+      #5eead4 25%,
+      #60a5fa 30%
+    );
+  background-size: 300%, 200%;
+  background-position: 50% 50%, 50% 50%;
+  filter: blur(20px);
+  mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
+  z-index: 0;
+  animation: smoothBg 60s linear infinite;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+@keyframes smoothBg {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
         `}</style>
       </section>
 
