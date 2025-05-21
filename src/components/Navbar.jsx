@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Десктопное меню */}
         <nav className="hidden md:flex gap-8 text-sm text-gray-400 items-center">
           <a href="#" className="hover:text-white transition duration-300">
-            Trafic for B2B
+            Services
           </a>
           <a href="#" className="hover:text-white transition duration-300">
             Legal for crypto
