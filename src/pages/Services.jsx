@@ -37,7 +37,7 @@ export default function Services() {
               The platform provides ready-made tools: payment buttons, API integrations, crypto invoices, and bulk payouts.
             </p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="p-6 rounded-lg border border-gray-800">
             <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
             <ul className="list-disc list-inside text-gray-400 space-y-2">
               <li>Hosted payment buttons for websites</li>
@@ -62,7 +62,7 @@ export default function Services() {
               We assist in launching your own centralized or decentralized exchange. Our solution includes legal structuring, liquidity provisioning, security architecture, and custom branding.
             </p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="p-6 rounded-lg border border-gray-800">
             <h6 className="text-yellow-400 font-semibold mb-4">You Get:</h6>
             <ul className="list-disc list-inside text-gray-400 space-y-2">
               <li>White-label CEX or hybrid exchange setup</li>
