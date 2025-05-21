@@ -99,7 +99,7 @@ export default function CryptoProcessingPage() {
 
   const texts = {
     title: "Accept Crypto. Hassle-Free.",
-    description: "Instant payments, global reach, trusted security.",
+    description: "Enable instant crypto payments, expand globally, and rely on enterprise-grade security.",
     startIntegration: "Start Integration",
     learnMore: "Learn More",
     whatWeOffer: "What We Offer",
