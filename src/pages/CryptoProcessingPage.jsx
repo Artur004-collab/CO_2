@@ -147,7 +147,6 @@ export default function CryptoProcessingPage() {
           </div>
         </div>
         <style jsx>{`
-          /* Фоновая анимация с использованием кастомных свойств */
           :root {
             --stripe-color: #fff;
           }
@@ -159,7 +158,6 @@ export default function CryptoProcessingPage() {
             display: flex;
             place-content: center;
             place-items: center;
-            /* Определяем два фоновых слоя */
             --stripes: repeating-linear-gradient(
               100deg,
               var(--stripe-color) 0%,
@@ -191,6 +189,7 @@ export default function CryptoProcessingPage() {
             animation: smoothBg 60s linear infinite;
             background-attachment: fixed;
             mix-blend-mode: difference;
+            z-index: -1;
           }
           @keyframes smoothBg {
             from {
