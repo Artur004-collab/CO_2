@@ -307,11 +307,11 @@ export default function CryptoProcessingPage() {
 
         {/* Надпись под каруселью */}
         <div className="text-center mt-8">
-          <p className="text-lg text-gray-400 font-thick">
+          <p className="text-lg text-gray-400 font-semibold mb-4">
             Over 100+ Popular Crypto currencies and tokens supported
           </p>
-          <p className="text-lg text-gray-400 font-thick">
-            Over 100+ Popular Crypto currencies and tokens supported
+          <p className="text-lg text-gray-400 font-semibold">
+            Best quotes for OTC trades
           </p>
         </div>
 
