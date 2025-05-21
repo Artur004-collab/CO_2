@@ -254,13 +254,13 @@ export default function CryptoProcessingPage() {
               }}
             >
               See more ...
-              <ArrowRight size={20} className="ml-2 transition-transform duration-300 mb-20" />
+              <ArrowRight size={20} className="ml-2 transition-transform duration-300"/>
             </Link>
           </div>
         </div>
 
         {/* Карусель логотипов */}
-        <div className="logo-carousel-wrapper mt-20 w-full overflow-hidden">
+        <div className="logo-carousel-wrapper mt-20 w-full overflow-hidden  mb-20">
           <div className="logo-carousel-track flex space-x-8 animate-marquee">
             {/* Логотипы токенов с CoinMarketCap */}
             <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="Bitcoin" className="h-12 w-auto" />
