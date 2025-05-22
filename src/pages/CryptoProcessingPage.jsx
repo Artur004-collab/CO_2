@@ -175,7 +175,7 @@ export default function CryptoProcessingPage() {
               ),
               repeating-linear-gradient(
                 100deg,
-                #60a5fa 10%,
+                #60a5fa 11%,
                 #e879f9 15%,
                 #60a5fa 20%,
                 #5eead4 25%,
